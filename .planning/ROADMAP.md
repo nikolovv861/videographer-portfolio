@@ -29,10 +29,12 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. The active section is visually highlighted in the navbar as the user scrolls
   4. On mobile, a hamburger menu opens and closes with smooth animation
   5. The site renders with the correct dark charcoal background, off-white headings, warm gray body text, champagne gold accents, and Syne heading font across all breakpoints
-**Plans:** 3 plans
+**Plans:** 4 plans
 
 Plans:
-- [ ] 01-01-PLAN.md — Design system, data architecture, and placeholder page layout
+- [ ] 01-00-PLAN.md — Test infrastructure (Playwright + Vitest) and test stubs
+- [ ] 01-01-PLAN.md — Design tokens, fonts, types, and data files
+- [ ] 01-04-PLAN.md — UI components, placeholder sections, layout, and page
 - [ ] 01-02-PLAN.md — Navigation shell with scroll behavior, active section, mobile menu
 - [ ] 01-03-PLAN.md — Human verification of complete Phase 1 foundation
 
@@ -93,7 +95,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 0/3 | Planned | - |
+| 1. Foundation | 0/4 | Planned | - |
 | 2. Video Experience | 0/3 | Not started | - |
 | 3. Content Sections | 0/3 | Not started | - |
 | 4. Cinematic Polish | 0/2 | Not started | - |
