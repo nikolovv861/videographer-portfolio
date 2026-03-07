@@ -48,12 +48,13 @@ Plans:
   3. Clicking a project card opens a full-screen modal with case study details (video, metadata, narrative sections, gallery) that can be closed via button, backdrop click, or Escape
   4. Background scroll is locked while a modal is open without losing the user's scroll position
   5. The showreel section displays a large video player with description text and two navigation buttons
-**Plans**: TBD
+**Plans:** 4 plans
 
 Plans:
-- [ ] 02-01: TBD
-- [ ] 02-02: TBD
-- [ ] 02-03: TBD
+- [ ] 02-00-PLAN.md — Test stubs and data contracts (Project type extension, hero data, Playwright stubs)
+- [ ] 02-01-PLAN.md — Hero section with Vimeo background video, parallax, and VimeoEmbed component
+- [ ] 02-02-PLAN.md — Featured work grid with hover video previews and case study modal
+- [ ] 02-03-PLAN.md — Showreel section, page wiring, and human verification
 
 ### Phase 3: Content Sections
 **Goal**: All remaining content sections are built -- services, client logos, about, process, testimonials, contact form, and footer -- completing the full single-page layout
@@ -96,6 +97,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 5/5 | Complete   | 2026-03-07 |
-| 2. Video Experience | 0/3 | Not started | - |
+| 2. Video Experience | 0/4 | Not started | - |
 | 3. Content Sections | 0/3 | Not started | - |
 | 4. Cinematic Polish | 0/2 | Not started | - |
