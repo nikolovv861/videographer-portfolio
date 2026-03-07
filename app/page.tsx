@@ -1,6 +1,6 @@
-import { HeroPlaceholder } from "@/components/sections/HeroPlaceholder";
-import { WorkPlaceholder } from "@/components/sections/WorkPlaceholder";
-import { ShowreelPlaceholder } from "@/components/sections/ShowreelPlaceholder";
+import { Hero } from "@/components/sections/Hero";
+import { FeaturedWork } from "@/components/sections/FeaturedWork";
+import { Showreel } from "@/components/sections/Showreel";
 import { ServicesPlaceholder } from "@/components/sections/ServicesPlaceholder";
 import { ClientsPlaceholder } from "@/components/sections/ClientsPlaceholder";
 import { AboutPlaceholder } from "@/components/sections/AboutPlaceholder";
@@ -14,13 +14,13 @@ export default function Home() {
   return (
     <main>
       <SectionObserver sectionId="hero">
-        <HeroPlaceholder />
+        <Hero />
       </SectionObserver>
       <SectionObserver sectionId="work">
-        <WorkPlaceholder />
+        <FeaturedWork />
       </SectionObserver>
       <SectionObserver sectionId="showreel">
-        <ShowreelPlaceholder />
+        <Showreel />
       </SectionObserver>
       <SectionObserver sectionId="services">
         <ServicesPlaceholder />
