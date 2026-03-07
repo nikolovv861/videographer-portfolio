@@ -2,16 +2,16 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: completed
-stopped_at: Phase 2 context gathered
-last_updated: "2026-03-07T23:04:47.047Z"
-last_activity: 2026-03-07 -- Phase 1 foundation verified and approved by user
+status: in-progress
+stopped_at: Completed 02-00-PLAN.md
+last_updated: "2026-03-07T23:26:00.038Z"
+last_activity: 2026-03-07 -- Phase 2 plan 00 data contracts and test stubs complete
 progress:
   total_phases: 4
   completed_phases: 1
-  total_plans: 5
-  completed_plans: 5
-  percent: 100
+  total_plans: 9
+  completed_plans: 6
+  percent: 67
 ---
 
 # Project State
@@ -21,16 +21,16 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-07)
 
 **Core value:** The site must immediately communicate cinematic quality and professionalism through visual design, smooth animations, and video-first presentation.
-**Current focus:** Phase 1 Complete -- Ready for Phase 2
+**Current focus:** Phase 2 Video Experience -- Plan 00 complete, data contracts ready
 
 ## Current Position
 
-Phase: 1 of 4 (Foundation) -- COMPLETE
-Plan: 5 of 5 in current phase (all done)
-Status: Phase 1 Complete
-Last activity: 2026-03-07 -- Phase 1 foundation verified and approved by user
+Phase: 2 of 4 (Video Experience)
+Plan: 1 of 4 in current phase
+Status: Plan 02-00 complete, proceeding to 02-01
+Last activity: 2026-03-07 -- Phase 2 plan 00 data contracts and test stubs complete
 
-Progress: [██████████] 100%
+Progress: [███████░░░] 67%
 
 ## Performance Metrics
 
@@ -55,6 +55,7 @@ Progress: [██████████] 100%
 | Phase 01 P04 | 2min | 2 tasks | 14 files |
 | Phase 01 P02 | 2min | 2 tasks | 7 files |
 | Phase 01 P03 | 1min | 1 tasks | 0 files |
+| Phase 02 P00 | 1min | 2 tasks | 7 files |
 
 ## Accumulated Context
 
@@ -75,6 +76,8 @@ Recent decisions affecting current work:
 - [Phase 01]: Native anchor hrefs for smooth scroll instead of Next.js Link (scroll-padding compatibility)
 - [Phase 01]: Z-index 50 for navbar and mobile overlay per established z-index scale
 - [Phase 01-03]: Phase 1 foundation approved by user -- all 14 desktop/mobile verification criteria passed
+- [02-00]: Hero data self-contained in data/hero.ts, not importing from siteConfig
+- [02-00]: Placeholder Vimeo IDs used for all projects and hero showreel
 
 ### Pending Todos
 
@@ -87,6 +90,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-07T23:04:47.043Z
-Stopped at: Phase 2 context gathered
-Resume file: .planning/phases/02-video-experience/02-CONTEXT.md
+Last session: 2026-03-07T23:25:25Z
+Stopped at: Completed 02-00-PLAN.md
+Resume file: .planning/phases/02-video-experience/02-00-SUMMARY.md
