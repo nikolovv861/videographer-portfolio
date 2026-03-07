@@ -12,7 +12,7 @@ This roadmap delivers a cinematic videographer portfolio in four phases: first t
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Foundation** - Navigation, design system, typography, data architecture
+- [x] **Phase 1: Foundation** - Navigation, design system, typography, data architecture (completed 2026-03-07)
 - [ ] **Phase 2: Video Experience** - Hero showreel, featured work grid with modals, showreel section
 - [ ] **Phase 3: Content Sections** - Services, clients, about, process, testimonials, contact, footer
 - [ ] **Phase 4: Cinematic Polish** - Page load intro, custom cursor, film grain, scroll animations, performance, SEO
@@ -29,7 +29,7 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. The active section is visually highlighted in the navbar as the user scrolls
   4. On mobile, a hamburger menu opens and closes with smooth animation
   5. The site renders with the correct dark charcoal background, off-white headings, warm gray body text, champagne gold accents, and Syne heading font across all breakpoints
-**Plans:** 4/5 plans executed
+**Plans:** 5/5 plans complete
 
 Plans:
 - [ ] 01-00-PLAN.md — Test infrastructure (Playwright + Vitest) and test stubs
@@ -95,7 +95,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 4/5 | In Progress|  |
+| 1. Foundation | 5/5 | Complete   | 2026-03-07 |
 | 2. Video Experience | 0/3 | Not started | - |
 | 3. Content Sections | 0/3 | Not started | - |
 | 4. Cinematic Polish | 0/2 | Not started | - |
