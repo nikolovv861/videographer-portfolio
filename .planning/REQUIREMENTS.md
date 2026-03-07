@@ -7,11 +7,11 @@
 
 ### Navigation
 
-- [ ] **NAV-01**: Fixed navbar is transparent on hero, transitions to solid dark background on scroll
-- [ ] **NAV-02**: Nav links smooth-scroll to corresponding page sections with offset for fixed header
-- [ ] **NAV-03**: Active section is highlighted in nav based on scroll position
-- [ ] **NAV-04**: Mobile hamburger menu opens/closes with smooth animation
-- [ ] **NAV-05**: Logo displayed on left, nav links center/right, CTA button "Start a Project" on right
+- [x] **NAV-01**: Fixed navbar is transparent on hero, transitions to solid dark background on scroll
+- [x] **NAV-02**: Nav links smooth-scroll to corresponding page sections with offset for fixed header
+- [x] **NAV-03**: Active section is highlighted in nav based on scroll position
+- [x] **NAV-04**: Mobile hamburger menu opens/closes with smooth animation
+- [x] **NAV-05**: Logo displayed on left, nav links center/right, CTA button "Start a Project" on right
 
 ### Hero
 
@@ -87,7 +87,7 @@
 - [x] **VIS-01**: Dark charcoal background (#0a0a0a) with off-white headings (#f5f5f5) and warm gray body text (#a0a0a0)
 - [x] **VIS-02**: Champagne gold (#c9a96e) accent used sparingly: CTA buttons, hover states, section divider lines only
 - [x] **VIS-03**: Syne font for headings, clean sans-serif for body text, loaded via next/font
-- [ ] **VIS-04**: Fully responsive mobile-first design with appropriate breakpoints
+- [x] **VIS-04**: Fully responsive mobile-first design with appropriate breakpoints
 
 ### Performance & SEO
 
@@ -133,11 +133,11 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| NAV-01 | Phase 1 | Pending |
-| NAV-02 | Phase 1 | Pending |
-| NAV-03 | Phase 1 | Pending |
-| NAV-04 | Phase 1 | Pending |
-| NAV-05 | Phase 1 | Pending |
+| NAV-01 | Phase 1 | Complete |
+| NAV-02 | Phase 1 | Complete |
+| NAV-03 | Phase 1 | Complete |
+| NAV-04 | Phase 1 | Complete |
+| NAV-05 | Phase 1 | Complete |
 | HERO-01 | Phase 2 | Pending |
 | HERO-02 | Phase 2 | Pending |
 | HERO-03 | Phase 2 | Pending |
@@ -177,7 +177,7 @@
 | VIS-01 | Phase 1 | Complete |
 | VIS-02 | Phase 1 | Complete |
 | VIS-03 | Phase 1 | Complete |
-| VIS-04 | Phase 1 | Pending |
+| VIS-04 | Phase 1 | Complete |
 | PERF-01 | Phase 4 | Pending |
 | PERF-02 | Phase 4 | Pending |
 | PERF-03 | Phase 4 | Pending |
