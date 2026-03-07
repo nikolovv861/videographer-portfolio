@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test": "vitest run",
+    "test:e2e": "npx playwright test --project=chromium",
+    "test:all": "vitest run && npx playwright test --project=chromium"
   },
   "dependencies": {
     "next": "16.1.6",
