@@ -15,10 +15,10 @@
 
 ### Hero
 
-- [ ] **HERO-01**: Full-screen autoplay showreel video plays muted and looped as background
-- [ ] **HERO-02**: Headline and subheadline text overlay on video with readable contrast
-- [ ] **HERO-03**: Two CTA buttons: "View My Work" (scrolls to Featured Work) + "Start a Project" (scrolls to Contact)
-- [ ] **HERO-04**: Parallax depth effect on hero content during scroll
+- [x] **HERO-01**: Full-screen autoplay showreel video plays muted and looped as background
+- [x] **HERO-02**: Headline and subheadline text overlay on video with readable contrast
+- [x] **HERO-03**: Two CTA buttons: "View My Work" (scrolls to Featured Work) + "Start a Project" (scrolls to Contact)
+- [x] **HERO-04**: Parallax depth effect on hero content during scroll
 
 ### Featured Work
 
@@ -138,10 +138,10 @@
 | NAV-03 | Phase 1 | Complete |
 | NAV-04 | Phase 1 | Complete |
 | NAV-05 | Phase 1 | Complete |
-| HERO-01 | Phase 2 | Pending |
-| HERO-02 | Phase 2 | Pending |
-| HERO-03 | Phase 2 | Pending |
-| HERO-04 | Phase 2 | Pending |
+| HERO-01 | Phase 2 | Complete |
+| HERO-02 | Phase 2 | Complete |
+| HERO-03 | Phase 2 | Complete |
+| HERO-04 | Phase 2 | Complete |
 | WORK-01 | Phase 2 | Pending |
 | WORK-02 | Phase 2 | Pending |
 | WORK-03 | Phase 2 | Pending |

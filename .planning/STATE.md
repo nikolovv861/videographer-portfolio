@@ -2,16 +2,16 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: in-progress
-stopped_at: Completed 02-00-PLAN.md
-last_updated: "2026-03-07T23:26:00.038Z"
-last_activity: 2026-03-07 -- Phase 2 plan 00 data contracts and test stubs complete
+status: completed
+stopped_at: Completed 02-01-PLAN.md
+last_updated: "2026-03-07T23:29:36.588Z"
+last_activity: 2026-03-07 -- Hero section with Vimeo background and parallax complete
 progress:
   total_phases: 4
   completed_phases: 1
   total_plans: 9
-  completed_plans: 6
-  percent: 67
+  completed_plans: 7
+  percent: 78
 ---
 
 # Project State
@@ -21,16 +21,16 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-07)
 
 **Core value:** The site must immediately communicate cinematic quality and professionalism through visual design, smooth animations, and video-first presentation.
-**Current focus:** Phase 2 Video Experience -- Plan 00 complete, data contracts ready
+**Current focus:** Phase 2 Video Experience -- Plan 01 complete, Hero section built
 
 ## Current Position
 
 Phase: 2 of 4 (Video Experience)
-Plan: 1 of 4 in current phase
-Status: Plan 02-00 complete, proceeding to 02-01
-Last activity: 2026-03-07 -- Phase 2 plan 00 data contracts and test stubs complete
+Plan: 2 of 4 in current phase
+Status: Plan 02-01 complete, proceeding to 02-02
+Last activity: 2026-03-07 -- Hero section with Vimeo background and parallax complete
 
-Progress: [███████░░░] 67%
+Progress: [████████░░] 78%
 
 ## Performance Metrics
 
@@ -56,6 +56,7 @@ Progress: [███████░░░] 67%
 | Phase 01 P02 | 2min | 2 tasks | 7 files |
 | Phase 01 P03 | 1min | 1 tasks | 0 files |
 | Phase 02 P00 | 1min | 2 tasks | 7 files |
+| Phase 02 P01 | 1min | 2 tasks | 3 files |
 
 ## Accumulated Context
 
@@ -78,6 +79,8 @@ Recent decisions affecting current work:
 - [Phase 01-03]: Phase 1 foundation approved by user -- all 14 desktop/mobile verification criteria passed
 - [02-00]: Hero data self-contained in data/hero.ts, not importing from siteConfig
 - [02-00]: Placeholder Vimeo IDs used for all projects and hero showreel
+- [Phase 02]: VimeoEmbed uses iframe with Vimeo background=1 param for autoplay muted loop
+- [Phase 02]: Parallax uses vanilla scroll listener with passive flag for performance
 
 ### Pending Todos
 
@@ -90,6 +93,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-07T23:25:25Z
-Stopped at: Completed 02-00-PLAN.md
-Resume file: .planning/phases/02-video-experience/02-00-SUMMARY.md
+Last session: 2026-03-07T23:29:36.586Z
+Stopped at: Completed 02-01-PLAN.md
+Resume file: None
