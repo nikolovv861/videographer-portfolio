@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: completed
-stopped_at: Completed 02-01-PLAN.md
-last_updated: "2026-03-07T23:29:36.588Z"
+stopped_at: Completed 02-02-PLAN.md
+last_updated: "2026-03-07T23:30:20.393Z"
 last_activity: 2026-03-07 -- Hero section with Vimeo background and parallax complete
 progress:
   total_phases: 4
   completed_phases: 1
   total_plans: 9
-  completed_plans: 7
+  completed_plans: 8
   percent: 78
 ---
 
@@ -21,16 +21,16 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-07)
 
 **Core value:** The site must immediately communicate cinematic quality and professionalism through visual design, smooth animations, and video-first presentation.
-**Current focus:** Phase 2 Video Experience -- Plan 01 complete, Hero section built
+**Current focus:** Phase 2 Video Experience -- Plan 02 complete, work grid and modal built
 
 ## Current Position
 
 Phase: 2 of 4 (Video Experience)
-Plan: 2 of 4 in current phase
-Status: Plan 02-01 complete, proceeding to 02-02
-Last activity: 2026-03-07 -- Hero section with Vimeo background and parallax complete
+Plan: 3 of 4 in current phase
+Status: Plan 02-02 complete, proceeding to 02-03
+Last activity: 2026-03-07 -- Featured work grid with hover video previews and case study modal
 
-Progress: [████████░░] 78%
+Progress: [█████████░] 89%
 
 ## Performance Metrics
 
@@ -57,6 +57,7 @@ Progress: [████████░░] 78%
 | Phase 01 P03 | 1min | 1 tasks | 0 files |
 | Phase 02 P00 | 1min | 2 tasks | 7 files |
 | Phase 02 P01 | 1min | 2 tasks | 3 files |
+| Phase 02 P02 | 2min | 2 tasks | 4 files |
 
 ## Accumulated Context
 
@@ -81,6 +82,7 @@ Recent decisions affecting current work:
 - [02-00]: Placeholder Vimeo IDs used for all projects and hero showreel
 - [Phase 02]: VimeoEmbed uses iframe with Vimeo background=1 param for autoplay muted loop
 - [Phase 02]: Parallax uses vanilla scroll listener with passive flag for performance
+- [Phase 02]: Inline Vimeo iframe fallback in ProjectModal instead of importing VimeoEmbed (Plan 01 not yet executed)
 
 ### Pending Todos
 
@@ -93,6 +95,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-07T23:29:36.586Z
-Stopped at: Completed 02-01-PLAN.md
+Last session: 2026-03-07T23:30:20.391Z
+Stopped at: Completed 02-02-PLAN.md
 Resume file: None

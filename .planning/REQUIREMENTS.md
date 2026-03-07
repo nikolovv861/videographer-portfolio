@@ -22,12 +22,12 @@
 
 ### Featured Work
 
-- [ ] **WORK-01**: Grid displays 6–9 project cards with video thumbnail, project title, and category tag
-- [ ] **WORK-02**: Hovering a card plays a short video loop preview
-- [ ] **WORK-03**: Clicking a card opens full-screen modal with backdrop blur
-- [ ] **WORK-04**: Modal displays hero video, project metadata (Client, Year, Role, Type), The Challenge, The Approach, The Result, and photo gallery
-- [ ] **WORK-05**: Modal can be closed via close button, backdrop click, or Escape key
-- [ ] **WORK-06**: Background scroll is locked while modal is open without losing scroll position
+- [x] **WORK-01**: Grid displays 6–9 project cards with video thumbnail, project title, and category tag
+- [x] **WORK-02**: Hovering a card plays a short video loop preview
+- [x] **WORK-03**: Clicking a card opens full-screen modal with backdrop blur
+- [x] **WORK-04**: Modal displays hero video, project metadata (Client, Year, Role, Type), The Challenge, The Approach, The Result, and photo gallery
+- [x] **WORK-05**: Modal can be closed via close button, backdrop click, or Escape key
+- [x] **WORK-06**: Background scroll is locked while modal is open without losing scroll position
 
 ### Showreel
 
@@ -142,12 +142,12 @@
 | HERO-02 | Phase 2 | Complete |
 | HERO-03 | Phase 2 | Complete |
 | HERO-04 | Phase 2 | Complete |
-| WORK-01 | Phase 2 | Pending |
-| WORK-02 | Phase 2 | Pending |
-| WORK-03 | Phase 2 | Pending |
-| WORK-04 | Phase 2 | Pending |
-| WORK-05 | Phase 2 | Pending |
-| WORK-06 | Phase 2 | Pending |
+| WORK-01 | Phase 2 | Complete |
+| WORK-02 | Phase 2 | Complete |
+| WORK-03 | Phase 2 | Complete |
+| WORK-04 | Phase 2 | Complete |
+| WORK-05 | Phase 2 | Complete |
+| WORK-06 | Phase 2 | Complete |
 | REEL-01 | Phase 2 | Pending |
 | REEL-02 | Phase 2 | Pending |
 | REEL-03 | Phase 2 | Pending |
