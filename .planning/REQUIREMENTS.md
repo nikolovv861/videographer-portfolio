@@ -31,9 +31,9 @@
 
 ### Showreel
 
-- [ ] **REEL-01**: Large embedded video player with play controls
-- [ ] **REEL-02**: Short description text below/beside player
-- [ ] **REEL-03**: Two buttons: "Watch Showreel" + "See All Work" (scrolls to Featured Work)
+- [x] **REEL-01**: Large embedded video player with play controls
+- [x] **REEL-02**: Short description text below/beside player
+- [x] **REEL-03**: Two buttons: "Watch Showreel" + "See All Work" (scrolls to Featured Work)
 
 ### Services
 
@@ -148,9 +148,9 @@
 | WORK-04 | Phase 2 | Complete |
 | WORK-05 | Phase 2 | Complete |
 | WORK-06 | Phase 2 | Complete |
-| REEL-01 | Phase 2 | Pending |
-| REEL-02 | Phase 2 | Pending |
-| REEL-03 | Phase 2 | Pending |
+| REEL-01 | Phase 2 | Complete |
+| REEL-02 | Phase 2 | Complete |
+| REEL-03 | Phase 2 | Complete |
 | SERV-01 | Phase 3 | Pending |
 | SERV-02 | Phase 3 | Pending |
 | CLNT-01 | Phase 3 | Pending |

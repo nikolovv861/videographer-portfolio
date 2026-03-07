@@ -13,7 +13,7 @@ This roadmap delivers a cinematic videographer portfolio in four phases: first t
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation** - Navigation, design system, typography, data architecture (completed 2026-03-07)
-- [ ] **Phase 2: Video Experience** - Hero showreel, featured work grid with modals, showreel section
+- [x] **Phase 2: Video Experience** - Hero showreel, featured work grid with modals, showreel section (completed 2026-03-07)
 - [ ] **Phase 3: Content Sections** - Services, clients, about, process, testimonials, contact, footer
 - [ ] **Phase 4: Cinematic Polish** - Page load intro, custom cursor, film grain, scroll animations, performance, SEO
 
@@ -48,7 +48,7 @@ Plans:
   3. Clicking a project card opens a full-screen modal with case study details (video, metadata, narrative sections, gallery) that can be closed via button, backdrop click, or Escape
   4. Background scroll is locked while a modal is open without losing the user's scroll position
   5. The showreel section displays a large video player with description text and two navigation buttons
-**Plans:** 4 plans
+**Plans:** 4/4 plans complete
 
 Plans:
 - [ ] 02-00-PLAN.md — Test stubs and data contracts (Project type extension, hero data, Playwright stubs)
@@ -97,6 +97,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 5/5 | Complete   | 2026-03-07 |
-| 2. Video Experience | 0/4 | Not started | - |
+| 2. Video Experience | 4/4 | Complete   | 2026-03-07 |
 | 3. Content Sections | 0/3 | Not started | - |
 | 4. Cinematic Polish | 0/2 | Not started | - |
