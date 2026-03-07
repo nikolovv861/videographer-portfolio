@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { syne, dmSans } from "@/lib/fonts";
+import { ActiveSectionProvider } from "@/components/providers/ActiveSectionProvider";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -16,7 +17,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${syne.variable} ${dmSans.variable}`}>
       <body className="bg-background text-body font-body antialiased">
-        {children}
+        <ActiveSectionProvider>
+          {children}
+        </ActiveSectionProvider>
       </body>
     </html>
   );
