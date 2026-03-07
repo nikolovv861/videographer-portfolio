@@ -3,9 +3,9 @@ import { syne, dmSans } from "@/lib/fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Alex Rivera | Cinematic Storytelling",
+  title: "Alex Rivera | Cinematic Videographer",
   description:
-    "Videographer and director specializing in cinematic brand films, commercials, and social content.",
+    "Cinematic videography portfolio showcasing brand films, commercials, and social content by Alex Rivera.",
 };
 
 export default function RootLayout({
@@ -14,10 +14,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${syne.variable} ${dmSans.variable} antialiased`}
-      >
+    <html lang="en" className={`${syne.variable} ${dmSans.variable}`}>
+      <body className="bg-background text-body font-body antialiased">
         {children}
       </body>
     </html>
