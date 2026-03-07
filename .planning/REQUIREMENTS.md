@@ -84,9 +84,9 @@
 
 ### Visual Design
 
-- [ ] **VIS-01**: Dark charcoal background (#0a0a0a) with off-white headings (#f5f5f5) and warm gray body text (#a0a0a0)
-- [ ] **VIS-02**: Champagne gold (#c9a96e) accent used sparingly: CTA buttons, hover states, section divider lines only
-- [ ] **VIS-03**: Syne font for headings, clean sans-serif for body text, loaded via next/font
+- [x] **VIS-01**: Dark charcoal background (#0a0a0a) with off-white headings (#f5f5f5) and warm gray body text (#a0a0a0)
+- [x] **VIS-02**: Champagne gold (#c9a96e) accent used sparingly: CTA buttons, hover states, section divider lines only
+- [x] **VIS-03**: Syne font for headings, clean sans-serif for body text, loaded via next/font
 - [ ] **VIS-04**: Fully responsive mobile-first design with appropriate breakpoints
 
 ### Performance & SEO
@@ -97,8 +97,8 @@
 
 ### Content
 
-- [ ] **DATA-01**: All text, videos, images, and logos are placeholder content stored in static data files
-- [ ] **DATA-02**: Content is organized in clearly named data files that are easy to find and modify
+- [x] **DATA-01**: All text, videos, images, and logos are placeholder content stored in static data files
+- [x] **DATA-02**: Content is organized in clearly named data files that are easy to find and modify
 
 ## v2 Requirements
 
@@ -174,15 +174,15 @@
 | FX-05 | Phase 4 | Pending |
 | FX-06 | Phase 4 | Pending |
 | FX-07 | Phase 4 | Pending |
-| VIS-01 | Phase 1 | Pending |
-| VIS-02 | Phase 1 | Pending |
-| VIS-03 | Phase 1 | Pending |
+| VIS-01 | Phase 1 | Complete |
+| VIS-02 | Phase 1 | Complete |
+| VIS-03 | Phase 1 | Complete |
 | VIS-04 | Phase 1 | Pending |
 | PERF-01 | Phase 4 | Pending |
 | PERF-02 | Phase 4 | Pending |
 | PERF-03 | Phase 4 | Pending |
-| DATA-01 | Phase 1 | Pending |
-| DATA-02 | Phase 1 | Pending |
+| DATA-01 | Phase 1 | Complete |
+| DATA-02 | Phase 1 | Complete |
 
 **Coverage:**
 - v1 requirements: 50 total
