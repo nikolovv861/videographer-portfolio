@@ -133,62 +133,62 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| NAV-01 | — | Pending |
-| NAV-02 | — | Pending |
-| NAV-03 | — | Pending |
-| NAV-04 | — | Pending |
-| NAV-05 | — | Pending |
-| HERO-01 | — | Pending |
-| HERO-02 | — | Pending |
-| HERO-03 | — | Pending |
-| HERO-04 | — | Pending |
-| WORK-01 | — | Pending |
-| WORK-02 | — | Pending |
-| WORK-03 | — | Pending |
-| WORK-04 | — | Pending |
-| WORK-05 | — | Pending |
-| WORK-06 | — | Pending |
-| REEL-01 | — | Pending |
-| REEL-02 | — | Pending |
-| REEL-03 | — | Pending |
-| SERV-01 | — | Pending |
-| SERV-02 | — | Pending |
-| CLNT-01 | — | Pending |
-| CLNT-02 | — | Pending |
-| ABUT-01 | — | Pending |
-| ABUT-02 | — | Pending |
-| PROC-01 | — | Pending |
-| PROC-02 | — | Pending |
-| TEST-01 | — | Pending |
-| TEST-02 | — | Pending |
-| CONT-01 | — | Pending |
-| CONT-02 | — | Pending |
-| CONT-03 | — | Pending |
-| CONT-04 | — | Pending |
-| FOOT-01 | — | Pending |
-| FOOT-02 | — | Pending |
-| FX-01 | — | Pending |
-| FX-02 | — | Pending |
-| FX-03 | — | Pending |
-| FX-04 | — | Pending |
-| FX-05 | — | Pending |
-| FX-06 | — | Pending |
-| FX-07 | — | Pending |
-| VIS-01 | — | Pending |
-| VIS-02 | — | Pending |
-| VIS-03 | — | Pending |
-| VIS-04 | — | Pending |
-| PERF-01 | — | Pending |
-| PERF-02 | — | Pending |
-| PERF-03 | — | Pending |
-| DATA-01 | — | Pending |
-| DATA-02 | — | Pending |
+| NAV-01 | Phase 1 | Pending |
+| NAV-02 | Phase 1 | Pending |
+| NAV-03 | Phase 1 | Pending |
+| NAV-04 | Phase 1 | Pending |
+| NAV-05 | Phase 1 | Pending |
+| HERO-01 | Phase 2 | Pending |
+| HERO-02 | Phase 2 | Pending |
+| HERO-03 | Phase 2 | Pending |
+| HERO-04 | Phase 2 | Pending |
+| WORK-01 | Phase 2 | Pending |
+| WORK-02 | Phase 2 | Pending |
+| WORK-03 | Phase 2 | Pending |
+| WORK-04 | Phase 2 | Pending |
+| WORK-05 | Phase 2 | Pending |
+| WORK-06 | Phase 2 | Pending |
+| REEL-01 | Phase 2 | Pending |
+| REEL-02 | Phase 2 | Pending |
+| REEL-03 | Phase 2 | Pending |
+| SERV-01 | Phase 3 | Pending |
+| SERV-02 | Phase 3 | Pending |
+| CLNT-01 | Phase 3 | Pending |
+| CLNT-02 | Phase 3 | Pending |
+| ABUT-01 | Phase 3 | Pending |
+| ABUT-02 | Phase 3 | Pending |
+| PROC-01 | Phase 3 | Pending |
+| PROC-02 | Phase 3 | Pending |
+| TEST-01 | Phase 3 | Pending |
+| TEST-02 | Phase 3 | Pending |
+| CONT-01 | Phase 3 | Pending |
+| CONT-02 | Phase 3 | Pending |
+| CONT-03 | Phase 3 | Pending |
+| CONT-04 | Phase 3 | Pending |
+| FOOT-01 | Phase 3 | Pending |
+| FOOT-02 | Phase 3 | Pending |
+| FX-01 | Phase 4 | Pending |
+| FX-02 | Phase 4 | Pending |
+| FX-03 | Phase 4 | Pending |
+| FX-04 | Phase 4 | Pending |
+| FX-05 | Phase 4 | Pending |
+| FX-06 | Phase 4 | Pending |
+| FX-07 | Phase 4 | Pending |
+| VIS-01 | Phase 1 | Pending |
+| VIS-02 | Phase 1 | Pending |
+| VIS-03 | Phase 1 | Pending |
+| VIS-04 | Phase 1 | Pending |
+| PERF-01 | Phase 4 | Pending |
+| PERF-02 | Phase 4 | Pending |
+| PERF-03 | Phase 4 | Pending |
+| DATA-01 | Phase 1 | Pending |
+| DATA-02 | Phase 1 | Pending |
 
 **Coverage:**
-- v1 requirements: 46 total
-- Mapped to phases: 0
-- Unmapped: 46
+- v1 requirements: 50 total
+- Mapped to phases: 50
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-03-07*
-*Last updated: 2026-03-07 after initial definition*
+*Last updated: 2026-03-07 after roadmap creation*
