@@ -11,6 +11,7 @@ export const projects: Project[] = [
     type: "Commercial",
     thumbnailUrl: "/images/projects/aurora-thumb.jpg",
     videoUrl: "/videos/aurora-spirits.mp4",
+    vimeoId: "123456789",
     challenge:
       "Capture the artisanal craft of small-batch spirits in a way that feels cinematic yet authentic.",
     approach:
@@ -33,6 +34,7 @@ export const projects: Project[] = [
     type: "Brand Film",
     thumbnailUrl: "/images/projects/meridian-thumb.jpg",
     videoUrl: "/videos/meridian-collective.mp4",
+    vimeoId: "234567890",
     challenge:
       "Tell the story of a creative agency redefining collaborative design.",
     approach:
@@ -55,6 +57,7 @@ export const projects: Project[] = [
     type: "Commercial",
     thumbnailUrl: "/images/projects/velo-thumb.jpg",
     videoUrl: "/videos/velo-athletics.mp4",
+    vimeoId: "345678901",
     challenge:
       "Showcase high-performance athletic wear in extreme outdoor conditions.",
     approach:
@@ -77,6 +80,7 @@ export const projects: Project[] = [
     type: "Social Content",
     thumbnailUrl: "/images/projects/solstice-thumb.jpg",
     videoUrl: "/videos/solstice-beauty.mp4",
+    vimeoId: "456789012",
     challenge:
       "Create scroll-stopping social content for a clean beauty brand launch.",
     approach:
@@ -99,6 +103,7 @@ export const projects: Project[] = [
     type: "Corporate",
     thumbnailUrl: "/images/projects/nexus-thumb.jpg",
     videoUrl: "/videos/nexus-conference.mp4",
+    vimeoId: "567890123",
     challenge:
       "Capture a three-day tech conference with keynotes, breakouts, and networking events.",
     approach:
@@ -121,6 +126,7 @@ export const projects: Project[] = [
     type: "Brand Film",
     thumbnailUrl: "/images/projects/terra-thumb.jpg",
     videoUrl: "/videos/terra-foundation.mp4",
+    vimeoId: "678901234",
     challenge:
       "Communicate an environmental nonprofit's mission with emotional impact.",
     approach:

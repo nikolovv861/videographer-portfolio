@@ -14,6 +14,7 @@ export interface Project {
   type: string;
   thumbnailUrl: string;
   videoUrl: string;
+  vimeoId?: string;
   challenge: string;
   approach: string;
   result: string;
