@@ -29,12 +29,12 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. The active section is visually highlighted in the navbar as the user scrolls
   4. On mobile, a hamburger menu opens and closes with smooth animation
   5. The site renders with the correct dark charcoal background, off-white headings, warm gray body text, champagne gold accents, and Syne heading font across all breakpoints
-**Plans**: TBD
+**Plans:** 3 plans
 
 Plans:
-- [ ] 01-01: TBD
-- [ ] 01-02: TBD
-- [ ] 01-03: TBD
+- [ ] 01-01-PLAN.md — Design system, data architecture, and placeholder page layout
+- [ ] 01-02-PLAN.md — Navigation shell with scroll behavior, active section, mobile menu
+- [ ] 01-03-PLAN.md — Human verification of complete Phase 1 foundation
 
 ### Phase 2: Video Experience
 **Goal**: Users experience the cinematic video-first portfolio -- full-screen hero showreel, browsable project grid with hover previews, and detailed project case study modals
@@ -93,7 +93,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 0/3 | Not started | - |
+| 1. Foundation | 0/3 | Planned | - |
 | 2. Video Experience | 0/3 | Not started | - |
 | 3. Content Sections | 0/3 | Not started | - |
 | 4. Cinematic Polish | 0/2 | Not started | - |
