@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { syne, dmSans } from "@/lib/fonts";
 import { ActiveSectionProvider } from "@/components/providers/ActiveSectionProvider";
+import { Navbar } from "@/components/navbar/Navbar";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -18,6 +19,7 @@ export default function RootLayout({
     <html lang="en" className={`${syne.variable} ${dmSans.variable}`}>
       <body className="bg-background text-body font-body antialiased">
         <ActiveSectionProvider>
+          <Navbar />
           {children}
         </ActiveSectionProvider>
       </body>
