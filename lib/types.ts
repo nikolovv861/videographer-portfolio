@@ -42,6 +42,18 @@ export interface ProcessStep {
   description: string;
 }
 
+export interface AboutContent {
+  photoUrl: string;
+  bio: string;
+  philosophy: string;
+}
+
+export interface Client {
+  id: string;
+  name: string;
+  logoUrl: string;
+}
+
 export interface SiteConfig {
   name: string;
   tagline: string;
