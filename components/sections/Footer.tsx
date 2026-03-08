@@ -1,3 +1,4 @@
+import { Instagram, Linkedin } from "lucide-react";
 import { siteConfig } from "@/data/navigation";
 
 export function Footer() {
@@ -27,7 +28,7 @@ export function Footer() {
               className="flex h-10 w-10 items-center justify-center rounded-full bg-foreground/5 text-xs text-body transition-colors duration-300 hover:bg-foreground/10"
               aria-label="Instagram"
             >
-              IG
+              <Instagram className="h-5 w-5" />
             </a>
             <a
               href={siteConfig.linkedin}
@@ -36,7 +37,7 @@ export function Footer() {
               className="flex h-10 w-10 items-center justify-center rounded-full bg-foreground/5 text-xs text-body transition-colors duration-300 hover:bg-foreground/10"
               aria-label="LinkedIn"
             >
-              LI
+              <Linkedin className="h-5 w-5" />
             </a>
           </div>
         </div>

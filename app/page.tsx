@@ -1,12 +1,12 @@
 import { Hero } from "@/components/sections/Hero";
 import { FeaturedWork } from "@/components/sections/FeaturedWork";
 import { Showreel } from "@/components/sections/Showreel";
-import { ServicesPlaceholder } from "@/components/sections/ServicesPlaceholder";
-import { ClientsPlaceholder } from "@/components/sections/ClientsPlaceholder";
-import { AboutPlaceholder } from "@/components/sections/AboutPlaceholder";
-import { ProcessPlaceholder } from "@/components/sections/ProcessPlaceholder";
-import { TestimonialsPlaceholder } from "@/components/sections/TestimonialsPlaceholder";
-import { ContactPlaceholder } from "@/components/sections/ContactPlaceholder";
+import { Services } from "@/components/sections/Services";
+import { Clients } from "@/components/sections/Clients";
+import { About } from "@/components/sections/About";
+import { Process } from "@/components/sections/Process";
+import { Testimonials } from "@/components/sections/Testimonials";
+import { Contact } from "@/components/sections/Contact";
 import { Footer } from "@/components/sections/Footer";
 import { SectionObserver } from "@/components/sections/SectionObserver";
 
@@ -23,22 +23,22 @@ export default function Home() {
         <Showreel />
       </SectionObserver>
       <SectionObserver sectionId="services">
-        <ServicesPlaceholder />
+        <Services />
       </SectionObserver>
       <SectionObserver sectionId="clients">
-        <ClientsPlaceholder />
+        <Clients />
       </SectionObserver>
       <SectionObserver sectionId="about">
-        <AboutPlaceholder />
+        <About />
       </SectionObserver>
       <SectionObserver sectionId="process">
-        <ProcessPlaceholder />
+        <Process />
       </SectionObserver>
       <SectionObserver sectionId="testimonials">
-        <TestimonialsPlaceholder />
+        <Testimonials />
       </SectionObserver>
       <SectionObserver sectionId="contact">
-        <ContactPlaceholder />
+        <Contact />
       </SectionObserver>
       <Footer />
     </main>
