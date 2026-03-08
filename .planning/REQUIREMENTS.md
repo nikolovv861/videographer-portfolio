@@ -74,13 +74,13 @@
 
 ### Cinematic Effects
 
-- [ ] **FX-01**: Page load intro with percentage counter (0–100%) then smooth reveal of content
-- [ ] **FX-02**: Loading intro skipped on return visits within same session (sessionStorage)
-- [ ] **FX-03**: Custom cursor with small dot + larger ring follower on desktop only
-- [ ] **FX-04**: Film grain texture overlay at low opacity on hero and dark section backgrounds
-- [ ] **FX-05**: Scroll-triggered animations: staggered reveals, fade-ins, scale effects on all sections
-- [ ] **FX-06**: Animated gold line dividers that draw themselves between sections on scroll
-- [ ] **FX-07**: All animations respect `prefers-reduced-motion` (disabled for users who prefer it)
+- [x] **FX-01**: Page load intro with percentage counter (0–100%) then smooth reveal of content
+- [x] **FX-02**: Loading intro skipped on return visits within same session (sessionStorage)
+- [x] **FX-03**: Custom cursor with small dot + larger ring follower on desktop only
+- [x] **FX-04**: Film grain texture overlay at low opacity on hero and dark section backgrounds
+- [x] **FX-05**: Scroll-triggered animations: staggered reveals, fade-ins, scale effects on all sections
+- [x] **FX-06**: Animated gold line dividers that draw themselves between sections on scroll
+- [x] **FX-07**: All animations respect `prefers-reduced-motion` (disabled for users who prefer it)
 
 ### Visual Design
 
@@ -91,8 +91,8 @@
 
 ### Performance & SEO
 
-- [ ] **PERF-01**: Videos lazy-loaded below the fold with poster images
-- [ ] **PERF-02**: Meta tags, Open Graph tags, and JSON-LD structured data for SEO
+- [x] **PERF-01**: Videos lazy-loaded below the fold with poster images
+- [x] **PERF-02**: Meta tags, Open Graph tags, and JSON-LD structured data for SEO
 - [ ] **PERF-03**: Lighthouse performance score above 80 on desktop
 
 ### Content
@@ -167,19 +167,19 @@
 | CONT-04 | Phase 3 | Complete |
 | FOOT-01 | Phase 3 | Complete |
 | FOOT-02 | Phase 3 | Complete |
-| FX-01 | Phase 4 | Pending |
-| FX-02 | Phase 4 | Pending |
-| FX-03 | Phase 4 | Pending |
-| FX-04 | Phase 4 | Pending |
-| FX-05 | Phase 4 | Pending |
-| FX-06 | Phase 4 | Pending |
-| FX-07 | Phase 4 | Pending |
+| FX-01 | Phase 4 | Complete |
+| FX-02 | Phase 4 | Complete |
+| FX-03 | Phase 4 | Complete |
+| FX-04 | Phase 4 | Complete |
+| FX-05 | Phase 4 | Complete |
+| FX-06 | Phase 4 | Complete |
+| FX-07 | Phase 4 | Complete |
 | VIS-01 | Phase 1 | Complete |
 | VIS-02 | Phase 1 | Complete |
 | VIS-03 | Phase 1 | Complete |
 | VIS-04 | Phase 1 | Complete |
-| PERF-01 | Phase 4 | Pending |
-| PERF-02 | Phase 4 | Pending |
+| PERF-01 | Phase 4 | Complete |
+| PERF-02 | Phase 4 | Complete |
 | PERF-03 | Phase 4 | Pending |
 | DATA-01 | Phase 1 | Complete |
 | DATA-02 | Phase 1 | Complete |
