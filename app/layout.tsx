@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { syne, dmSans } from "@/lib/fonts";
 import { ActiveSectionProvider } from "@/components/providers/ActiveSectionProvider";
 import { Navbar } from "@/components/navbar/Navbar";
+import { CustomCursor } from "@/components/effects/CustomCursor";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -22,6 +23,7 @@ export default function RootLayout({
           <Navbar />
           {children}
         </ActiveSectionProvider>
+        <CustomCursor />
       </body>
     </html>
   );

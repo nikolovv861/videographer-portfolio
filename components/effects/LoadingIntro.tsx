@@ -206,7 +206,6 @@ export function LoadingIntro() {
                     top: `calc(50% - ${BAR_HEIGHT / 2}px)`,
                     height: BAR_HEIGHT,
                     backdropFilter: "blur(2px) grayscale(0.8)",
-                    WebkitBackdropFilter: "blur(2px) grayscale(0.8)",
                   }}
                   initial={{ opacity: 1 }}
                   animate={{ opacity: 1 }}
@@ -222,11 +221,9 @@ export function LoadingIntro() {
                   }}
                   initial={{
                     backdropFilter: "blur(2px) grayscale(0.8)",
-                    WebkitBackdropFilter: "blur(2px) grayscale(0.8)",
                   }}
                   animate={{
                     backdropFilter: "blur(0px) grayscale(0)",
-                    WebkitBackdropFilter: "blur(0px) grayscale(0)",
                   }}
                   transition={{ duration: REVEAL_DURATION * 0.6, ease: "easeOut" }}
                 />
