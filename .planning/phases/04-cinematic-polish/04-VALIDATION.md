@@ -2,8 +2,9 @@
 phase: 04
 slug: cinematic-polish
 status: draft
-nyquist_compliant: false
+nyquist_compliant: true
 wave_0_complete: false
+wave_0_plan: "04-00"
 created: 2026-03-08
 ---
 
@@ -34,25 +35,29 @@ created: 2026-03-08
 
 ---
 
+## Wave 0 Plan
+
+Wave 0 test stubs are created by **04-00-PLAN.md** (Wave 0). This plan creates all 8 Playwright spec files listed below before any Wave 1 plan executes.
+
+---
+
 ## Per-Task Verification Map
 
-| Task ID | Plan | Wave | Requirement | Test Type | Automated Command | File Exists | Status |
-|---------|------|------|-------------|-----------|-------------------|-------------|--------|
-| 04-01-01 | 01 | 1 | FX-01, FX-02 | e2e | `npx playwright test --project=chromium tests/loading-intro.spec.ts -x` | ❌ W0 | ⬜ pending |
-| 04-01-02 | 01 | 1 | FX-03 | e2e | `npx playwright test --project=chromium tests/custom-cursor.spec.ts -x` | ❌ W0 | ⬜ pending |
-| 04-01-03 | 01 | 1 | FX-04 | e2e | `npx playwright test --project=chromium tests/film-grain.spec.ts -x` | ❌ W0 | ⬜ pending |
-| 04-02-01 | 02 | 2 | FX-05 | e2e | `npx playwright test --project=chromium tests/scroll-animations.spec.ts -x` | ❌ W0 | ⬜ pending |
-| 04-02-02 | 02 | 2 | FX-06 | e2e | `npx playwright test --project=chromium tests/gold-dividers.spec.ts -x` | ❌ W0 | ⬜ pending |
-| 04-02-03 | 02 | 2 | FX-07 | e2e | `npx playwright test --project=chromium tests/reduced-motion.spec.ts -x` | ❌ W0 | ⬜ pending |
-| 04-03-01 | 03 | 3 | PERF-01 | e2e | `npx playwright test --project=chromium tests/lazy-loading.spec.ts -x` | ❌ W0 | ⬜ pending |
-| 04-03-02 | 03 | 3 | PERF-02 | e2e | `npx playwright test --project=chromium tests/seo-meta.spec.ts -x` | ❌ W0 | ⬜ pending |
-| 04-03-03 | 03 | 3 | PERF-03 | manual | Manual Lighthouse audit | N/A | ⬜ pending |
+| Task ID | Plan | Wave | Requirement | Test Type | Automated Command | Spec File | Status |
+|---------|------|------|-------------|-----------|-------------------|-----------|--------|
+| 04-01-01 | 01 | 1 | FX-04, FX-06, FX-07, FX-05 | e2e | `npx playwright test --project=chromium tests/film-grain.spec.ts tests/gold-dividers.spec.ts tests/scroll-animations.spec.ts tests/reduced-motion.spec.ts -x` | Created by 04-00 | ⬜ pending |
+| 04-02-01 | 02 | 2 | FX-01, FX-02 | e2e | `npx playwright test --project=chromium tests/loading-intro.spec.ts -x` | Created by 04-00 | ⬜ pending |
+| 04-03-01 | 03 | 2 | FX-03 | e2e | `npx playwright test --project=chromium tests/custom-cursor.spec.ts -x` | Created by 04-00 | ⬜ pending |
+| 04-04-01 | 04 | 3 | PERF-01, PERF-02 | e2e | `npx playwright test --project=chromium tests/lazy-loading.spec.ts tests/seo-meta.spec.ts -x` | Created by 04-00 | ⬜ pending |
+| 04-04-02 | 04 | 3 | PERF-03 | manual | Manual Lighthouse audit | N/A | ⬜ pending |
 
 *Status: ⬜ pending · ✅ green · ❌ red · ⚠️ flaky*
 
 ---
 
 ## Wave 0 Requirements
+
+All created by **04-00-PLAN.md**:
 
 - [ ] `tests/loading-intro.spec.ts` — stubs for FX-01, FX-02
 - [ ] `tests/custom-cursor.spec.ts` — stubs for FX-03
@@ -62,7 +67,6 @@ created: 2026-03-08
 - [ ] `tests/reduced-motion.spec.ts` — stubs for FX-07
 - [ ] `tests/lazy-loading.spec.ts` — stubs for PERF-01
 - [ ] `tests/seo-meta.spec.ts` — stubs for PERF-02
-- [ ] Framework install: `npm install motion` — motion package not yet installed
 
 ---
 
@@ -76,11 +80,11 @@ created: 2026-03-08
 
 ## Validation Sign-Off
 
-- [ ] All tasks have `<automated>` verify or Wave 0 dependencies
-- [ ] Sampling continuity: no 3 consecutive tasks without automated verify
-- [ ] Wave 0 covers all MISSING references
-- [ ] No watch-mode flags
-- [ ] Feedback latency < 30s
-- [ ] `nyquist_compliant: true` set in frontmatter
+- [x] All tasks have `<automated>` verify or Wave 0 dependencies
+- [x] Sampling continuity: no 3 consecutive tasks without automated verify
+- [x] Wave 0 covers all MISSING references (04-00-PLAN.md creates all 8 spec files)
+- [x] No watch-mode flags
+- [x] Feedback latency < 30s
+- [x] `nyquist_compliant: true` set in frontmatter
 
-**Approval:** pending
+**Approval:** approved

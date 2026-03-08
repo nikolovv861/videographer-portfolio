@@ -83,9 +83,10 @@ Plans:
   3. Film grain texture is visible at low opacity on hero and dark section backgrounds
   4. All sections animate in with scroll-triggered staggered reveals, fade-ins, and scale effects, with animated gold line dividers drawing between sections
   5. All animations are disabled when the user has prefers-reduced-motion enabled, and Lighthouse desktop performance score is above 80
-**Plans:** 4 plans
+**Plans:** 5 plans
 
 Plans:
+- [ ] 04-00-PLAN.md — Wave 0 test stubs (8 Playwright spec files for all Phase 4 requirements)
 - [ ] 04-01-PLAN.md — Install motion, create effect components (FilmGrain, GoldDivider, ScrollReveal), reduced-motion CSS, wire into sections
 - [ ] 04-02-PLAN.md — Cinema letterbox loading intro with percentage counter and sessionStorage return visit detection
 - [ ] 04-03-PLAN.md — Custom cursor with dot + spring ring follower, hover states, desktop-only detection
@@ -101,4 +102,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | 1. Foundation | 5/5 | Complete   | 2026-03-07 |
 | 2. Video Experience | 4/4 | Complete   | 2026-03-07 |
 | 3. Content Sections | 3/3 | Complete   | 2026-03-08 |
-| 4. Cinematic Polish | 0/4 | Not started | - |
+| 4. Cinematic Polish | 0/5 | Not started | - |
