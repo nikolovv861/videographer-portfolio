@@ -24,7 +24,7 @@ export function Showreel() {
       {/* Vimeo player embed */}
       <ScrollReveal className="mt-16">
         <ScrollRevealItem>
-          <VimeoEmbed vimeoId={heroContent.vimeoId} mode="player" />
+          <VimeoEmbed vimeoId={heroContent.vimeoId} mode="player" lazy />
         </ScrollRevealItem>
       </ScrollReveal>
 

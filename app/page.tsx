@@ -12,9 +12,36 @@ import { SectionObserver } from "@/components/sections/SectionObserver";
 import { GoldDivider } from "@/components/effects/GoldDivider";
 import { LoadingIntro } from "@/components/effects/LoadingIntro";
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  name: "Alex Rivera Videography",
+  description:
+    "Cinematic videography for brands, commercials, and social content.",
+  url: "https://alexrivera.com",
+  image: "/og-image.jpg",
+  priceRange: "$$",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Los Angeles",
+    addressRegion: "CA",
+  },
+  sameAs: [
+    "https://instagram.com/alexrivera",
+    "https://linkedin.com/in/alexrivera",
+  ],
+};
+
 export default function Home() {
   return (
-    <main>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
+      <main>
       <LoadingIntro />
       <SectionObserver sectionId="hero">
         <Hero />
@@ -49,5 +76,6 @@ export default function Home() {
       </SectionObserver>
       <Footer />
     </main>
+    </>
   );
 }
