@@ -69,8 +69,8 @@
 
 ### Footer
 
-- [ ] **FOOT-01**: Footer displays email address, Instagram icon link, LinkedIn icon link
-- [ ] **FOOT-02**: Copyright text and small logo in footer
+- [x] **FOOT-01**: Footer displays email address, Instagram icon link, LinkedIn icon link
+- [x] **FOOT-02**: Copyright text and small logo in footer
 
 ### Cinematic Effects
 
@@ -165,8 +165,8 @@
 | CONT-02 | Phase 3 | Pending |
 | CONT-03 | Phase 3 | Complete |
 | CONT-04 | Phase 3 | Complete |
-| FOOT-01 | Phase 3 | Pending |
-| FOOT-02 | Phase 3 | Pending |
+| FOOT-01 | Phase 3 | Complete |
+| FOOT-02 | Phase 3 | Complete |
 | FX-01 | Phase 4 | Pending |
 | FX-02 | Phase 4 | Pending |
 | FX-03 | Phase 4 | Pending |
