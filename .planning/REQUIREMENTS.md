@@ -93,7 +93,7 @@
 
 - [x] **PERF-01**: Videos lazy-loaded below the fold with poster images
 - [x] **PERF-02**: Meta tags, Open Graph tags, and JSON-LD structured data for SEO
-- [ ] **PERF-03**: Lighthouse performance score above 80 on desktop
+- [x] **PERF-03**: Lighthouse performance score above 80 on desktop
 
 ### Content
 
@@ -180,7 +180,7 @@
 | VIS-04 | Phase 1 | Complete |
 | PERF-01 | Phase 4 | Complete |
 | PERF-02 | Phase 4 | Complete |
-| PERF-03 | Phase 4 | Pending |
+| PERF-03 | Phase 4 | Complete |
 | DATA-01 | Phase 1 | Complete |
 | DATA-02 | Phase 1 | Complete |
 
