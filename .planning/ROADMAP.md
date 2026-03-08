@@ -57,21 +57,21 @@ Plans:
 - [ ] 02-03-PLAN.md — Showreel section, page wiring, and human verification
 
 ### Phase 3: Content Sections
-**Goal**: All remaining content sections are built -- services, client logos, about, process, testimonials, contact form, and footer -- completing the full single-page layout
+**Goal**: All remaining content sections are built -- services, client logos, about, process, testimonials, contact (simplified, no form), and footer -- completing the full single-page layout
 **Depends on**: Phase 2
 **Requirements**: SERV-01, SERV-02, CLNT-01, CLNT-02, ABUT-01, ABUT-02, PROC-01, PROC-02, TEST-01, TEST-02, CONT-01, CONT-02, CONT-03, CONT-04, FOOT-01, FOOT-02
 **Success Criteria** (what must be TRUE):
-  1. Services section displays 3-5 cards each with icon, title, description, and CTA
-  2. Client logos section shows a strip/grid of placeholder brand logos with a section heading
-  3. About section displays a photo, bio, and philosophy statement in a layout that works on both mobile and desktop
-  4. Process section shows 4 visual steps (Discovery through Post Production) with titles and descriptions
-  5. Contact form validates required fields and email format with inline errors, displays a direct email link, and includes Submit and Book a Call buttons
-**Plans**: TBD
+  1. Services section displays 4 cards each with gold Lucide icon, title, description, and a section-level CTA
+  2. Client logos section shows an auto-scrolling infinite marquee of placeholder brand logos with a "Trusted By" heading
+  3. About section displays a photo placeholder, bio, and philosophy pull quote in a side-by-side layout on desktop, stacked on mobile
+  4. Process section shows 4 visual steps (Discovery through Post Production) with step numbers, titles, and descriptions
+  5. Contact section displays a heading, message, direct email link, and two CTA buttons (Start a Project mailto + Book a Call placeholder)
+**Plans:** 3 plans
 
 Plans:
-- [ ] 03-01: TBD
-- [ ] 03-02: TBD
-- [ ] 03-03: TBD
+- [ ] 03-01-PLAN.md — Data contracts, types, new data files, marquee CSS, Services and Process components
+- [ ] 03-02-PLAN.md — Clients marquee, About, Testimonials, and Contact section components
+- [ ] 03-03-PLAN.md — Footer Lucide icon upgrade, page wiring, placeholder cleanup, and visual verification
 
 ### Phase 4: Cinematic Polish
 **Goal**: The site feels premium and cinematic -- page load intro, custom cursor, film grain, scroll-triggered animations, animated dividers, and performance/SEO optimization
