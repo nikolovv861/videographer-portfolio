@@ -5,6 +5,7 @@ import { ChevronDown } from "lucide-react";
 import { heroContent } from "@/data/hero";
 import { Button } from "@/components/ui/Button";
 import { VimeoEmbed } from "@/components/ui/VimeoEmbed";
+import { FilmGrain } from "@/components/effects/FilmGrain";
 
 export function Hero() {
   const [scrollY, setScrollY] = useState(0);
@@ -27,6 +28,9 @@ export function Hero() {
     <section id="hero" className="relative min-h-screen overflow-hidden">
       {/* Layer 1: Video background */}
       <VimeoEmbed vimeoId={heroContent.vimeoId} mode="background" />
+
+      {/* Layer 1.5: Film grain texture */}
+      <FilmGrain className="z-[1]" />
 
       {/* Layer 2: Dark gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background" />

@@ -9,6 +9,7 @@ import { Testimonials } from "@/components/sections/Testimonials";
 import { Contact } from "@/components/sections/Contact";
 import { Footer } from "@/components/sections/Footer";
 import { SectionObserver } from "@/components/sections/SectionObserver";
+import { GoldDivider } from "@/components/effects/GoldDivider";
 
 export default function Home() {
   return (
@@ -16,12 +17,14 @@ export default function Home() {
       <SectionObserver sectionId="hero">
         <Hero />
       </SectionObserver>
+      <GoldDivider />
       <SectionObserver sectionId="work">
         <FeaturedWork />
       </SectionObserver>
       <SectionObserver sectionId="showreel">
         <Showreel />
       </SectionObserver>
+      <GoldDivider />
       <SectionObserver sectionId="services">
         <Services />
       </SectionObserver>
@@ -31,12 +34,14 @@ export default function Home() {
       <SectionObserver sectionId="about">
         <About />
       </SectionObserver>
+      <GoldDivider />
       <SectionObserver sectionId="process">
         <Process />
       </SectionObserver>
       <SectionObserver sectionId="testimonials">
         <Testimonials />
       </SectionObserver>
+      <GoldDivider />
       <SectionObserver sectionId="contact">
         <Contact />
       </SectionObserver>
