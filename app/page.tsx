@@ -10,10 +10,12 @@ import { Contact } from "@/components/sections/Contact";
 import { Footer } from "@/components/sections/Footer";
 import { SectionObserver } from "@/components/sections/SectionObserver";
 import { GoldDivider } from "@/components/effects/GoldDivider";
+import { LoadingIntro } from "@/components/effects/LoadingIntro";
 
 export default function Home() {
   return (
     <main>
+      <LoadingIntro />
       <SectionObserver sectionId="hero">
         <Hero />
       </SectionObserver>
