@@ -37,8 +37,8 @@
 
 ### Services
 
-- [ ] **SERV-01**: 3–5 service cards each with icon, title, short description, and CTA button
-- [ ] **SERV-02**: Services include: Commercial Video Production, Brand Story Films, Social Media Content, Event & Corporate Films
+- [x] **SERV-01**: 3–5 service cards each with icon, title, short description, and CTA button
+- [x] **SERV-02**: Services include: Commercial Video Production, Brand Story Films, Social Media Content, Event & Corporate Films
 
 ### Clients
 
@@ -52,8 +52,8 @@
 
 ### Process
 
-- [ ] **PROC-01**: 4 process steps displayed visually: Discovery → Concept → Production → Post Production
-- [ ] **PROC-02**: Each step has a title and one-line description
+- [x] **PROC-01**: 4 process steps displayed visually: Discovery → Concept → Production → Post Production
+- [x] **PROC-02**: Each step has a title and one-line description
 
 ### Testimonials
 
@@ -151,14 +151,14 @@
 | REEL-01 | Phase 2 | Complete |
 | REEL-02 | Phase 2 | Complete |
 | REEL-03 | Phase 2 | Complete |
-| SERV-01 | Phase 3 | Pending |
-| SERV-02 | Phase 3 | Pending |
+| SERV-01 | Phase 3 | Complete |
+| SERV-02 | Phase 3 | Complete |
 | CLNT-01 | Phase 3 | Pending |
 | CLNT-02 | Phase 3 | Pending |
 | ABUT-01 | Phase 3 | Pending |
 | ABUT-02 | Phase 3 | Pending |
-| PROC-01 | Phase 3 | Pending |
-| PROC-02 | Phase 3 | Pending |
+| PROC-01 | Phase 3 | Complete |
+| PROC-02 | Phase 3 | Complete |
 | TEST-01 | Phase 3 | Pending |
 | TEST-02 | Phase 3 | Pending |
 | CONT-01 | Phase 3 | Pending |
