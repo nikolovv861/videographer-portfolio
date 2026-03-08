@@ -42,13 +42,13 @@
 
 ### Clients
 
-- [ ] **CLNT-01**: Logo strip or grid displaying placeholder brand logos
-- [ ] **CLNT-02**: Section heading "Trusted By" or "Selected Collaborations"
+- [x] **CLNT-01**: Logo strip or grid displaying placeholder brand logos
+- [x] **CLNT-02**: Section heading "Trusted By" or "Selected Collaborations"
 
 ### About
 
-- [ ] **ABUT-01**: Photo of videographer with bio text and philosophy statement
-- [ ] **ABUT-02**: Layout works on both mobile (stacked) and desktop (side-by-side)
+- [x] **ABUT-01**: Photo of videographer with bio text and philosophy statement
+- [x] **ABUT-02**: Layout works on both mobile (stacked) and desktop (side-by-side)
 
 ### Process
 
@@ -57,15 +57,15 @@
 
 ### Testimonials
 
-- [ ] **TEST-01**: 2–3 testimonial cards with quote text, person name, and company
-- [ ] **TEST-02**: Cards have placeholder content that is easily swappable
+- [x] **TEST-01**: 2–3 testimonial cards with quote text, person name, and company
+- [x] **TEST-02**: Cards have placeholder content that is easily swappable
 
 ### Contact
 
-- [ ] **CONT-01**: Contact form with fields: Name, Email, Company, Project Description, Budget dropdown (optional)
+- [x] **CONT-01**: Contact form with fields: Name, Email, Company, Project Description, Budget dropdown (optional)
 - [ ] **CONT-02**: Form validates inputs (required fields, email format) with inline error messages
-- [ ] **CONT-03**: Direct email link displayed alongside form
-- [ ] **CONT-04**: Two CTA buttons: "Start a Project" (submit) + "Book a Call"
+- [x] **CONT-03**: Direct email link displayed alongside form
+- [x] **CONT-04**: Two CTA buttons: "Start a Project" (submit) + "Book a Call"
 
 ### Footer
 
@@ -153,18 +153,18 @@
 | REEL-03 | Phase 2 | Complete |
 | SERV-01 | Phase 3 | Complete |
 | SERV-02 | Phase 3 | Complete |
-| CLNT-01 | Phase 3 | Pending |
-| CLNT-02 | Phase 3 | Pending |
-| ABUT-01 | Phase 3 | Pending |
-| ABUT-02 | Phase 3 | Pending |
+| CLNT-01 | Phase 3 | Complete |
+| CLNT-02 | Phase 3 | Complete |
+| ABUT-01 | Phase 3 | Complete |
+| ABUT-02 | Phase 3 | Complete |
 | PROC-01 | Phase 3 | Complete |
 | PROC-02 | Phase 3 | Complete |
-| TEST-01 | Phase 3 | Pending |
-| TEST-02 | Phase 3 | Pending |
-| CONT-01 | Phase 3 | Pending |
+| TEST-01 | Phase 3 | Complete |
+| TEST-02 | Phase 3 | Complete |
+| CONT-01 | Phase 3 | Complete |
 | CONT-02 | Phase 3 | Pending |
-| CONT-03 | Phase 3 | Pending |
-| CONT-04 | Phase 3 | Pending |
+| CONT-03 | Phase 3 | Complete |
+| CONT-04 | Phase 3 | Complete |
 | FOOT-01 | Phase 3 | Pending |
 | FOOT-02 | Phase 3 | Pending |
 | FX-01 | Phase 4 | Pending |
