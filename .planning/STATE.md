@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Completed 04-01-PLAN.md
-last_updated: "2026-03-08T14:09:17Z"
-last_activity: 2026-03-08 -- Animation foundation: motion installed, FilmGrain/GoldDivider/ScrollReveal created
+stopped_at: Completed 04-02-PLAN.md
+last_updated: "2026-03-08T14:15:14.000Z"
+last_activity: "2026-03-08 -- Animation foundation: motion installed, FilmGrain/GoldDivider/ScrollReveal created"
 progress:
   total_phases: 4
   completed_phases: 3
   total_plans: 17
-  completed_plans: 15
+  completed_plans: 16
   percent: 82
 ---
 
@@ -26,11 +26,11 @@ See: .planning/PROJECT.md (updated 2026-03-07)
 ## Current Position
 
 Phase: 4 of 4 (Cinematic Polish)
-Plan: 2 of 5 in current phase (04-01 complete)
+Plan: 4 of 5 in current phase (04-03 complete)
 Status: Executing Phase 4
-Last activity: 2026-03-08 -- Animation foundation: motion installed, FilmGrain/GoldDivider/ScrollReveal created
+Last activity: 2026-03-08 -- Custom cursor with dot + springy ring follower, desktop-only
 
-Progress: [████████░░] 82%
+Progress: [█████████░] 88%
 
 ## Performance Metrics
 
@@ -64,6 +64,8 @@ Progress: [████████░░] 82%
 | Phase 03 P03 | 2min | 2 tasks | 15 files |
 | Phase 04 P00 | 2min | 2 tasks | 8 files |
 | Phase 04 P01 | 2min | 3 tasks | 11 files |
+| Phase 04 P03 | 2min | 2 tasks | 4 files |
+| Phase 04 P02 | 3min | 2 tasks | 2 files |
 
 ## Accumulated Context
 
@@ -99,6 +101,9 @@ Recent decisions affecting current work:
 - [04-00]: data-testid attributes for test selectors to decouple from implementation details
 - [04-01]: 4 GoldDividers placed between Hero/FeaturedWork, Showreel/Services, About/Process, Testimonials/Contact
 - [04-01]: FilmGrain uses z-[1] to layer between video background and gradient overlay
+- [Phase 04]: Stiffness 150 / damping 15 for springy ring follow on custom cursor
+- [Phase 04]: Removed WebkitBackdropFilter prefixes for motion type compatibility
+- [Phase 04]: Stage-based state machine (0-5) with setTimeout for multi-phase animation sequencing
 
 ### Pending Todos
 
@@ -111,6 +116,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-08T14:09:17Z
-Stopped at: Completed 04-01-PLAN.md
-Resume file: .planning/phases/04-cinematic-polish/04-01-SUMMARY.md
+Last session: 2026-03-08T14:15:13.997Z
+Stopped at: Completed 04-02-PLAN.md
+Resume file: None
