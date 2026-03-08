@@ -6,6 +6,7 @@ import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { ProjectCard } from "@/components/ui/ProjectCard";
 import { ProjectModal } from "@/components/ui/ProjectModal";
 import type { Project } from "@/lib/types";
+import { ScrollReveal, ScrollRevealItem } from "@/components/effects/ScrollReveal";
 
 export function FeaturedWork() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
@@ -15,15 +16,16 @@ export function FeaturedWork() {
       <h2 className="font-heading text-3xl font-bold tracking-tight text-heading md:text-4xl">
         Featured Work
       </h2>
-      <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <ScrollReveal className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project) => (
-          <ProjectCard
-            key={project.id}
-            project={project}
-            onClick={() => setSelectedProject(project)}
-          />
+          <ScrollRevealItem key={project.id}>
+            <ProjectCard
+              project={project}
+              onClick={() => setSelectedProject(project)}
+            />
+          </ScrollRevealItem>
         ))}
-      </div>
+      </ScrollReveal>
       {selectedProject && (
         <ProjectModal
           project={selectedProject}

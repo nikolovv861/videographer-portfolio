@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Clapperboard,
   Film,
@@ -8,6 +10,7 @@ import {
 import { services } from "@/data/services";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { Button } from "@/components/ui/Button";
+import { ScrollReveal, ScrollRevealItem } from "@/components/effects/ScrollReveal";
 
 const iconMap: Record<string, LucideIcon> = {
   Clapperboard,
@@ -23,25 +26,26 @@ export function Services() {
         Services
       </h2>
 
-      <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2">
+      <ScrollReveal className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2">
         {services.map((service) => {
           const Icon = iconMap[service.icon];
           return (
-            <div
-              key={service.id}
-              className="rounded-sm border border-foreground/10 p-8 transition-colors duration-300 hover:border-gold/40"
-            >
-              {Icon && <Icon className="h-8 w-8 text-gold" />}
-              <h3 className="mt-4 font-heading text-xl font-semibold text-heading">
-                {service.title}
-              </h3>
-              <p className="mt-3 text-base text-body md:text-lg">
-                {service.description}
-              </p>
-            </div>
+            <ScrollRevealItem key={service.id}>
+              <div
+                className="rounded-sm border border-foreground/10 p-8 transition-colors duration-300 hover:border-gold/40"
+              >
+                {Icon && <Icon className="h-8 w-8 text-gold" />}
+                <h3 className="mt-4 font-heading text-xl font-semibold text-heading">
+                  {service.title}
+                </h3>
+                <p className="mt-3 text-base text-body md:text-lg">
+                  {service.description}
+                </p>
+              </div>
+            </ScrollRevealItem>
           );
         })}
-      </div>
+      </ScrollReveal>
 
       <div className="mt-12 text-center">
         <Button variant="cta" href="#contact">
