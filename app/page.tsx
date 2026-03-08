@@ -7,6 +7,7 @@ import { About } from "@/components/sections/About";
 import { Process } from "@/components/sections/Process";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { Contact } from "@/components/sections/Contact";
+import { FAQ } from "@/components/sections/FAQ";
 import { Footer } from "@/components/sections/Footer";
 import { SectionObserver } from "@/components/sections/SectionObserver";
 import { GoldDivider } from "@/components/effects/GoldDivider";
@@ -69,6 +70,10 @@ export default function Home() {
       </SectionObserver>
       <SectionObserver sectionId="testimonials">
         <Testimonials />
+      </SectionObserver>
+      <GoldDivider />
+      <SectionObserver sectionId="faq">
+        <FAQ />
       </SectionObserver>
       <GoldDivider />
       <SectionObserver sectionId="contact">

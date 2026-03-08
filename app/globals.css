@@ -43,6 +43,12 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/* Gold focus rings for accessibility */
+:focus-visible {
+  outline: 2px solid #c9a96e;
+  outline-offset: 2px;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

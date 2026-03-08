@@ -26,8 +26,13 @@ export function Hero() {
 
   return (
     <section id="hero" className="relative min-h-screen overflow-hidden">
-      {/* Layer 1: Video background */}
-      <VimeoEmbed vimeoId={heroContent.vimeoId} mode="background" />
+      {/* Layer 1: Video background with parallax */}
+      <div
+        className="absolute inset-0"
+        style={{ transform: `translateY(${scrollY * 0.15}px) scale(1.1)` }}
+      >
+        <VimeoEmbed vimeoId={heroContent.vimeoId} mode="background" />
+      </div>
 
       {/* Layer 1.5: Film grain texture */}
       <FilmGrain className="z-[1]" />
