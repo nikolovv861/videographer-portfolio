@@ -53,3 +53,13 @@ h1, h2, h3, h4, h5, h6 {
     scroll-behavior: auto !important;
   }
 }
+
+/* Hide main content until LoadingIntro hydrates to prevent flash */
+main:not(.intro-ready) {
+  visibility: hidden;
+}
+@media (prefers-reduced-motion: reduce) {
+  main:not(.intro-ready) {
+    visibility: visible;
+  }
+}

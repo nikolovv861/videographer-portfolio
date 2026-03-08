@@ -45,8 +45,8 @@ export function CustomCursor() {
   const cursorX = useMotionValue(0);
   const cursorY = useMotionValue(0);
 
-  const ringX = useSpring(cursorX, { stiffness: 150, damping: 15 });
-  const ringY = useSpring(cursorY, { stiffness: 150, damping: 15 });
+  const ringX = useSpring(cursorX, { stiffness: 400, damping: 28 });
+  const ringY = useSpring(cursorY, { stiffness: 400, damping: 28 });
 
   const handleMouseMove = useCallback(
     (e: MouseEvent) => {
@@ -73,19 +73,7 @@ export function CustomCursor() {
 
   return (
     <>
-      {/* Dot */}
-      <motion.div
-        className="pointer-events-none fixed z-[90] h-2 w-2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-foreground"
-        style={{
-          left: cursorX,
-          top: cursorY,
-          opacity: isVisible ? 1 : 0,
-        }}
-        animate={{ scale: isHovering ? 0 : 1 }}
-        transition={{ duration: 0.15 }}
-      />
-
-      {/* Ring follower */}
+      {/* Ring cursor */}
       <motion.div
         className="pointer-events-none fixed z-[90] h-10 w-10 -translate-x-1/2 -translate-y-1/2 rounded-full border border-foreground/60"
         style={{
