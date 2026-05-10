@@ -50,6 +50,5 @@ export async function openTallyPopup(formId: string) {
     layout: "modal",
     width: 700,
     overlay: true,
-    hideTitle: true,
   });
 }
