@@ -99,7 +99,7 @@ export function Stats() {
               }
             >
               <p
-                className="font-heading text-6xl font-extrabold leading-[0.95] text-heading md:text-7xl lg:text-[5.25rem]"
+                className="font-heading text-5xl font-extrabold leading-[0.95] text-heading sm:text-6xl md:text-7xl lg:text-[5.25rem]"
                 style={{ letterSpacing: "-0.04em" }}
               >
                 <CountUp to={s.value} inView={inView} />

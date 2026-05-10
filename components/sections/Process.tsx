@@ -8,7 +8,7 @@ import { RevealHeading } from "@/components/effects/RevealHeading";
 export function Process() {
   return (
     <SectionWrapper id="process">
-      <RevealHeading className="font-heading text-5xl font-extrabold tracking-tight text-heading md:text-6xl lg:text-7xl">
+      <RevealHeading className="font-heading text-4xl font-extrabold tracking-tight text-heading sm:text-5xl md:text-6xl lg:text-7xl">
         The Process
       </RevealHeading>
 
@@ -29,7 +29,7 @@ export function Process() {
               {/* Big numeral */}
               <div>
                 <span
-                  className="block font-heading text-[7rem] font-black leading-[0.85] text-heading/95 sm:text-[9rem] md:text-[12rem] lg:text-[14rem]"
+                  className="block font-heading text-[5rem] font-black leading-[0.85] text-heading/95 sm:text-[8rem] md:text-[12rem] lg:text-[14rem]"
                   style={{ letterSpacing: "-0.06em" }}
                 >
                   {String(step.number).padStart(2, "0")}

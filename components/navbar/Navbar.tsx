@@ -29,7 +29,7 @@ export function Navbar() {
             : "bg-transparent"
         }`}
       >
-        <div className="mx-auto max-w-7xl px-6 md:px-8 flex items-center justify-between h-24">
+        <div className="mx-auto max-w-7xl px-6 md:px-8 flex items-center justify-between h-20 md:h-24">
           {/* Logo */}
           <button
             type="button"

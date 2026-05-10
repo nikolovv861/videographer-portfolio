@@ -73,7 +73,7 @@ export function Clients() {
         <p className="text-center font-heading text-[0.7rem] uppercase tracking-[0.3em] text-gold">
           Trusted by
         </p>
-        <RevealHeading className="mt-3 text-center font-heading text-5xl font-extrabold tracking-tight text-heading md:text-6xl lg:text-7xl">
+        <RevealHeading className="mt-3 text-center font-heading text-4xl font-extrabold tracking-tight text-heading sm:text-5xl md:text-6xl lg:text-7xl">
           Selected clients
         </RevealHeading>
       </div>

@@ -14,7 +14,7 @@ export function FeaturedWork() {
 
   return (
     <SectionWrapper id="work">
-      <RevealHeading className="font-heading text-5xl font-extrabold tracking-tight text-heading md:text-6xl lg:text-7xl">
+      <RevealHeading className="font-heading text-4xl font-extrabold tracking-tight text-heading sm:text-5xl md:text-6xl lg:text-7xl">
         Featured Work
       </RevealHeading>
 

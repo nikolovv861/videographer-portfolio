@@ -19,7 +19,7 @@ export function Contact() {
           <p className="text-[0.7rem] uppercase tracking-[0.3em] text-gold">
             Get in touch
           </p>
-          <RevealHeading className="mt-4 font-heading text-5xl font-extrabold tracking-tight text-heading md:text-6xl lg:text-7xl">
+          <RevealHeading className="mt-4 font-heading text-4xl font-extrabold tracking-tight text-heading sm:text-5xl md:text-6xl lg:text-7xl">
             Let&rsquo;s start a conversation.
           </RevealHeading>
           <p className="mt-6 text-base text-body md:text-lg">

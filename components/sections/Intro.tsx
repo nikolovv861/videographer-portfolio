@@ -21,7 +21,7 @@ export function Intro() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.7, delay: 0.1, ease: "easeOut" }}
-          className="mt-8 font-heading text-5xl font-extrabold tracking-tight text-heading md:text-6xl lg:text-7xl"
+          className="mt-8 font-heading text-4xl font-extrabold tracking-tight text-heading sm:text-5xl md:text-6xl lg:text-7xl"
         >
           Cinematic photo and video content
           <br className="hidden md:block" /> for premium brands.

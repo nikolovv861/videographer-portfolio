@@ -19,7 +19,7 @@ export function About() {
 
   return (
     <SectionWrapper id="about">
-      <RevealHeading className="font-heading text-5xl font-extrabold tracking-tight text-heading md:text-6xl lg:text-7xl">
+      <RevealHeading className="font-heading text-4xl font-extrabold tracking-tight text-heading sm:text-5xl md:text-6xl lg:text-7xl">
         About
       </RevealHeading>
       <ScrollReveal className="mt-16 grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">

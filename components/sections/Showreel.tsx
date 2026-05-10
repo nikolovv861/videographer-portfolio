@@ -11,7 +11,7 @@ export function Showreel() {
     <SectionWrapper id="showreel">
       <ScrollReveal className="text-center">
         <ScrollRevealItem>
-          <RevealHeading className="font-heading text-5xl font-extrabold tracking-tight text-heading md:text-6xl lg:text-7xl">
+          <RevealHeading className="font-heading text-4xl font-extrabold tracking-tight text-heading sm:text-5xl md:text-6xl lg:text-7xl">
             Showreel
           </RevealHeading>
           <p className="mx-auto mt-6 max-w-2xl text-base text-body md:text-lg">

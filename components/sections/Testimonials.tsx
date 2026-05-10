@@ -128,7 +128,7 @@ export function Testimonials() {
         <p className="font-heading text-[0.7rem] uppercase tracking-[0.3em] text-gold">
           What clients say
         </p>
-        <RevealHeading className="mt-3 font-heading text-5xl font-extrabold tracking-tight text-heading md:text-6xl lg:text-7xl">
+        <RevealHeading className="mt-3 font-heading text-4xl font-extrabold tracking-tight text-heading sm:text-5xl md:text-6xl lg:text-7xl">
           Testimonials
         </RevealHeading>
       </div>
