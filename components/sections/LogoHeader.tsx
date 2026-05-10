@@ -13,7 +13,7 @@ export function LogoHeader() {
         className="relative z-10 mx-auto"
       >
         <Image
-          src="/images/logos/nnmedia_logo_clean.png"
+          src="/images/logos/nnmedia_logo_trim.png"
           width={1000}
           height={1000}
           alt="Vipermedia logo"
