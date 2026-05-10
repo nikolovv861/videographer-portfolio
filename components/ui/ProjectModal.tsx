@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import { X } from "lucide-react";
 import type { Project } from "@/lib/types";
 import { useScrollLock } from "@/hooks/useScrollLock";
@@ -58,9 +59,11 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
     return () => document.removeEventListener("keydown", handleKeyDown);
   }, [onClose]);
 
-  return (
+  if (typeof document === "undefined") return null;
+
+  return createPortal(
     <div
-      className={`fixed inset-0 z-[100] overflow-y-auto bg-background/80 backdrop-blur-sm transition-opacity duration-300 ${
+      className={`fixed inset-0 z-[200] overflow-y-auto bg-background/85 backdrop-blur-sm transition-opacity duration-300 ${
         mounted ? "opacity-100" : "opacity-0"
       }`}
       onClick={(e) => {
@@ -69,7 +72,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
     >
       {/* Modal content container */}
       <div
-        className={`relative z-[110] mx-auto my-8 w-full max-w-5xl px-4 transition-transform duration-300 sm:px-6 ${
+        className={`relative z-[210] mx-auto mt-28 mb-8 w-full max-w-5xl px-4 transition-transform duration-300 sm:px-6 ${
           mounted ? "scale-100" : "scale-95"
         }`}
         onClick={(e) => e.stopPropagation()}
@@ -85,9 +88,17 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
 
         {/* Hero video area */}
         <div className="aspect-video overflow-hidden rounded bg-foreground/5">
-          {project.vimeoId ? (
+          {project.youtubeId ? (
             <iframe
-              src={`https://player.vimeo.com/video/${project.vimeoId}?autoplay=0&title=0&byline=0&portrait=0`}
+              src={`https://www.youtube-nocookie.com/embed/${project.youtubeId}?autoplay=1&controls=1&rel=0&modestbranding=1&playsinline=1`}
+              className="h-full w-full"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+              allowFullScreen
+              title={project.title}
+            />
+          ) : project.vimeoId ? (
+            <iframe
+              src={`https://player.vimeo.com/video/${project.vimeoId}?title=0&byline=0&portrait=0`}
               className="h-full w-full"
               allow="autoplay; fullscreen; picture-in-picture"
               allowFullScreen
@@ -120,18 +131,24 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
 
         {/* Gallery */}
         {project.gallery.length > 0 && (
-          <div className="mt-12 grid grid-cols-2 gap-4 pb-8 md:grid-cols-3">
-            {project.gallery.map((url, index) => (
-              <img
-                key={url}
-                src={url}
-                alt={`${project.title} gallery image ${index + 1}`}
-                className="aspect-video rounded bg-foreground/5 object-cover"
-              />
-            ))}
+          <div className="mt-12">
+            <p className="font-heading text-[0.7rem] uppercase tracking-[0.3em] text-gold">
+              Behind the scenes
+            </p>
+            <div className="mt-5 grid grid-cols-2 gap-4 pb-8 md:grid-cols-3">
+              {project.gallery.map((url, index) => (
+                <img
+                  key={url}
+                  src={url}
+                  alt={`${project.title} behind the scenes ${index + 1}`}
+                  className="aspect-video rounded bg-foreground/5 object-cover"
+                />
+              ))}
+            </div>
           </div>
         )}
       </div>
-    </div>
+    </div>,
+    document.body
   );
 }

@@ -2,31 +2,31 @@ import type { Service } from "@/lib/types";
 
 export const services: Service[] = [
   {
-    id: "commercial-video",
-    title: "Commercial Video Production",
+    id: "photography",
+    title: "Photography",
     description:
-      "High-impact commercials and promotional videos that elevate your brand and drive results across all platforms.",
-    icon: "Clapperboard",
+      "Editorial, product, and lifestyle photography that elevates visual identity and captures attention across every platform.",
+    icon: "Camera",
   },
   {
-    id: "brand-films",
-    title: "Brand Story Films",
+    id: "product-video",
+    title: "Product Video",
     description:
-      "Cinematic brand narratives that connect with audiences on an emotional level and communicate your unique story.",
-    icon: "Film",
+      "Cinematic product films that bring offerings to life in stunning detail and convert browsers into buyers.",
+    icon: "Video",
   },
   {
-    id: "social-content",
-    title: "Social Media Content",
+    id: "short-form",
+    title: "Short Form",
     description:
-      "Scroll-stopping short-form videos optimized for Instagram, TikTok, and YouTube that grow your audience.",
+      "Scroll-stopping vertical content built for Instagram, TikTok, and YouTube Shorts — designed to grow audiences.",
     icon: "Smartphone",
   },
   {
-    id: "event-corporate",
-    title: "Event and Corporate Films",
+    id: "social-content",
+    title: "Social Content",
     description:
-      "Professional coverage of conferences, corporate events, and internal communications with fast turnaround.",
-    icon: "Video",
+      "Ongoing post, story, and campaign content tailored to each platform’s best practices and your brand voice.",
+    icon: "Sparkles",
   },
 ];

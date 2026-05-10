@@ -1,21 +1,19 @@
 import type { NavItem, SiteConfig } from "@/lib/types";
 
 export const navItems: NavItem[] = [
-  { label: "Work", href: "#work", sectionId: "work" },
+  { label: "Portfolio", href: "#work", sectionId: "work" },
   { label: "Showreel", href: "#showreel", sectionId: "showreel" },
   { label: "Services", href: "#services", sectionId: "services" },
   { label: "About", href: "#about", sectionId: "about" },
-  { label: "FAQ", href: "#faq", sectionId: "faq" },
-  { label: "Contact", href: "#contact", sectionId: "contact" },
 ];
 
 export const siteConfig: SiteConfig = {
-  name: "Alex Rivera",
-  tagline: "Cinematic Storytelling",
-  email: "hello@alexrivera.com",
-  instagram: "https://instagram.com/alexrivera",
-  linkedin: "https://linkedin.com/in/alexrivera",
+  name: "Vipermedia",
+  tagline: "Unleash Your Story, Amplify Your Reach",
+  email: "hello@vipermedia.co",
+  instagram: "https://instagram.com/vipermedia",
+  linkedin: "https://linkedin.com/company/vipermedia",
   copyright: "All rights reserved.",
-  ctaText: "Start a Project",
+  ctaText: "Contact Us",
   ctaHref: "#contact",
 };

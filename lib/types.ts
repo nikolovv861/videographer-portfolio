@@ -15,6 +15,7 @@ export interface Project {
   thumbnailUrl: string;
   videoUrl: string;
   vimeoId?: string;
+  youtubeId?: string;
   challenge: string;
   approach: string;
   result: string;
@@ -52,6 +53,7 @@ export interface Client {
   id: string;
   name: string;
   logoUrl: string;
+  website?: string;
 }
 
 export interface SiteConfig {

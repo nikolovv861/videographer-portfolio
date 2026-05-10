@@ -14,7 +14,7 @@ export function NavLink({ item, isActive, onClick, className = "" }: NavLinkProp
     <a
       href={item.href}
       onClick={onClick}
-      className={`font-heading text-sm tracking-wide transition-colors duration-300 ${
+      className={`font-heading text-base md:text-lg tracking-wide transition-colors duration-300 ${
         isActive
           ? "text-gold"
           : "text-foreground/60 hover:text-foreground"

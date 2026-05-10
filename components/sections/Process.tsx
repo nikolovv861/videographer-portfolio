@@ -1,35 +1,64 @@
 "use client";
 
+import { motion } from "motion/react";
 import { processSteps } from "@/data/site";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
-import { ScrollReveal, ScrollRevealItem } from "@/components/effects/ScrollReveal";
+import { RevealHeading } from "@/components/effects/RevealHeading";
 
 export function Process() {
   return (
     <SectionWrapper id="process">
-      <h2 className="font-heading text-3xl font-bold tracking-tight text-heading md:text-4xl">
+      <RevealHeading className="font-heading text-5xl font-extrabold tracking-tight text-heading md:text-6xl lg:text-7xl">
         The Process
-      </h2>
+      </RevealHeading>
 
-      <ScrollReveal className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
-        {processSteps.map((step) => (
-          <ScrollRevealItem key={step.id}>
-            <div
-              className="rounded-sm border border-foreground/10 p-8 transition-colors duration-300 hover:border-gold/40"
+      <div className="mt-20 space-y-24 md:space-y-32">
+        {processSteps.map((step, i) => {
+          const reverse = i % 2 === 1;
+          return (
+            <motion.div
+              key={step.id}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+              className={`grid grid-cols-1 items-center gap-10 md:grid-cols-2 ${
+                reverse ? "md:[&>div:first-child]:order-2" : ""
+              }`}
             >
-              <span className="font-heading text-4xl font-bold text-foreground/10">
-                {String(step.number).padStart(2, "0")}
-              </span>
-              <h3 className="mt-4 font-heading text-xl font-semibold text-heading">
-                {step.title}
-              </h3>
-              <p className="mt-3 text-base text-body md:text-lg">
-                {step.description}
-              </p>
-            </div>
-          </ScrollRevealItem>
-        ))}
-      </ScrollReveal>
+              {/* Big numeral */}
+              <div>
+                <span
+                  className="block font-heading text-[7rem] font-black leading-[0.85] text-heading/95 sm:text-[9rem] md:text-[12rem] lg:text-[14rem]"
+                  style={{ letterSpacing: "-0.06em" }}
+                >
+                  {String(step.number).padStart(2, "0")}
+                </span>
+              </div>
+
+              {/* Text */}
+              <div className={reverse ? "md:text-right" : ""}>
+                <p className="text-[0.7rem] uppercase tracking-[0.3em] text-gold">
+                  Step {step.number}
+                </p>
+                <h3
+                  className="mt-3 font-heading text-3xl font-extrabold text-heading md:text-4xl lg:text-5xl"
+                  style={{ letterSpacing: "-0.025em" }}
+                >
+                  {step.title}
+                </h3>
+                <p
+                  className={`mt-4 max-w-md text-base text-body md:text-lg ${
+                    reverse ? "md:ml-auto" : ""
+                  }`}
+                >
+                  {step.description}
+                </p>
+              </div>
+            </motion.div>
+          );
+        })}
+      </div>
     </SectionWrapper>
   );
 }

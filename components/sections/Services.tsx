@@ -1,56 +1,86 @@
 "use client";
 
+import { useState } from "react";
+import { motion } from "motion/react";
 import {
+  Camera,
   Clapperboard,
   Film,
   Smartphone,
+  Sparkles,
   Video,
   type LucideIcon,
 } from "lucide-react";
 import { services } from "@/data/services";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
-import { Button } from "@/components/ui/Button";
-import { ScrollReveal, ScrollRevealItem } from "@/components/effects/ScrollReveal";
+import { RevealHeading } from "@/components/effects/RevealHeading";
 
 const iconMap: Record<string, LucideIcon> = {
+  Camera,
   Clapperboard,
   Film,
   Smartphone,
+  Sparkles,
   Video,
 };
 
 export function Services() {
+  const [active, setActive] = useState(0);
+  const current = services[active];
+  const Icon = iconMap[current.icon];
+
   return (
     <SectionWrapper id="services">
-      <h2 className="font-heading text-3xl font-bold tracking-tight text-heading md:text-4xl">
+      <RevealHeading className="font-heading text-5xl font-extrabold tracking-tight text-heading md:text-6xl lg:text-7xl">
         Services
-      </h2>
+      </RevealHeading>
 
-      <ScrollReveal className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2">
-        {services.map((service) => {
-          const Icon = iconMap[service.icon];
-          return (
-            <ScrollRevealItem key={service.id}>
-              <div
-                className="rounded-sm border border-foreground/10 p-8 transition-colors duration-300 hover:border-gold/40"
-              >
-                {Icon && <Icon className="h-8 w-8 text-gold" />}
-                <h3 className="mt-4 font-heading text-xl font-semibold text-heading">
-                  {service.title}
-                </h3>
-                <p className="mt-3 text-base text-body md:text-lg">
-                  {service.description}
-                </p>
-              </div>
-            </ScrollRevealItem>
-          );
-        })}
-      </ScrollReveal>
+      <div className="mt-16 grid grid-cols-1 gap-12 lg:grid-cols-12">
+        {/* Left: nav */}
+        <div className="lg:col-span-4">
+          <ul className="space-y-1">
+            {services.map((sv, i) => (
+              <li key={sv.id}>
+                <button
+                  onClick={() => setActive(i)}
+                  className={`group flex w-full items-baseline gap-4 border-l-2 py-3 pl-5 text-left font-heading text-2xl font-bold transition-all md:text-3xl ${
+                    active === i
+                      ? "border-gold text-heading"
+                      : "border-foreground/10 text-body hover:text-heading"
+                  }`}
+                  style={{ letterSpacing: "-0.025em" }}
+                >
+                  <span className="text-xs text-foreground/40">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  {sv.title}
+                </button>
+              </li>
+            ))}
+          </ul>
+        </div>
 
-      <div className="mt-12 text-center">
-        <Button variant="cta" href="#contact">
-          Start a Project
-        </Button>
+        {/* Right: detail */}
+        <div className="lg:col-span-8">
+          <motion.div
+            key={current.id}
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            className="rounded-sm border border-foreground/10 p-8 md:p-10"
+          >
+            {Icon && <Icon className="h-10 w-10 text-gold" strokeWidth={1.5} />}
+            <h3
+              className="mt-6 font-heading text-4xl font-extrabold text-heading md:text-5xl"
+              style={{ letterSpacing: "-0.025em" }}
+            >
+              {current.title}
+            </h3>
+            <p className="mt-6 max-w-xl text-base text-body md:text-lg">
+              {current.description}
+            </p>
+          </motion.div>
+        </div>
       </div>
     </SectionWrapper>
   );

@@ -6,51 +6,58 @@ export const processSteps: ProcessStep[] = [
     number: 1,
     title: "Discovery",
     description:
-      "We start with a deep dive into your brand, goals, and audience to align on a clear creative direction.",
+      "We take the time to understand your brand's unique voice, values, and audience so the content we create truly fits.",
   },
   {
     id: "concept",
     number: 2,
     title: "Concept",
     description:
-      "From mood boards to shot lists, we craft a detailed production plan that brings your vision to life.",
+      "From mood boards to shot lists, we craft a detailed creative plan tailored to your platforms — Instagram, TikTok, YouTube and beyond.",
   },
   {
     id: "production",
     number: 3,
     title: "Production",
     description:
-      "Lights, camera, action. Professional crews and cinema-grade equipment capture every moment with precision.",
+      "Professional photography and videography, captured with care and an eye for the details that elevate your brand.",
   },
   {
-    id: "post-production",
+    id: "delivery",
     number: 4,
-    title: "Post Production",
+    title: "Delivery & Revisions",
     description:
-      "Expert editing, color grading, sound design, and motion graphics transform raw footage into a polished final product.",
+      "Polished edits, tailored cutdowns and unlimited revisions until the content is absolutely perfect — backed by our 100% satisfaction guarantee.",
   },
 ];
 
 export const testimonials: Testimonial[] = [
   {
-    id: "testimonial-1",
+    id: "hypeclub",
     quote:
-      "Alex transformed our brand story into a cinematic experience that resonated deeply with our audience. The quality and attention to detail exceeded all expectations.",
-    name: "Sarah Chen",
-    company: "Aurora Distillery",
+      "Consistently on time and full of creative flair, they've put together a range of videos that truly reflect our brand's essence and capture the lively atmosphere of our club.",
+    name: "Hype Club Promo",
+    company: "@adhd",
   },
   {
-    id: "testimonial-2",
+    id: "nerone",
     quote:
-      "Working with Alex was seamless from concept to delivery. The final film captured the energy of our conference perfectly and became our most-shared content of the year.",
-    name: "Marcus Thompson",
-    company: "Nexus Technologies",
+      "Vipermedia provided me with the content of my products unlike anyone before — eye-catching and cinematic while keeping it clean.",
+    name: "Nerone",
+    company: "Streetwear Brand · @nerone",
   },
   {
-    id: "testimonial-3",
+    id: "after",
     quote:
-      "The social content strategy and execution was phenomenal. Our engagement tripled within the first month of launching the new video series.",
-    name: "Elena Rodriguez",
-    company: "Solstice Cosmetics",
+      "Simply a pleasure to work with — incredibly professionally done photos and videos for our socials.",
+    name: "After",
+    company: "Designer Brand · @after.the.store",
+  },
+  {
+    id: "logoto",
+    quote:
+      "Very punctual and creative — fully developed multiple portfolio pieces following our brand values.",
+    name: "Logoto Clothing",
+    company: "Streetwear Brand · @logoto_clothing",
   },
 ];

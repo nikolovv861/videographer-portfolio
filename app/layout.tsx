@@ -1,29 +1,30 @@
 import type { Metadata } from "next";
-import { syne, dmSans } from "@/lib/fonts";
+import { syne, dmSans, manrope } from "@/lib/fonts";
 import { ActiveSectionProvider } from "@/components/providers/ActiveSectionProvider";
 import { Navbar } from "@/components/navbar/Navbar";
-import { CustomCursor } from "@/components/effects/CustomCursor";
+import { ScrollProgressBar } from "@/components/effects/ScrollProgressBar";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Alex Rivera | Cinematic Videographer",
+  title: "Vipermedia — Unleash Your Story, Amplify Your Reach",
   description:
-    "Cinematic videography portfolio showcasing brand films, commercials, and social content by Alex Rivera.",
+    "Vipermedia specializes in content creation and visual storytelling — professional photography, product videos and short-form social content that elevates your brand.",
   keywords: [
-    "videographer",
-    "cinematographer",
-    "brand films",
-    "commercial video",
-    "portfolio",
-    "cinematic storytelling",
+    "vipermedia",
+    "content creation",
+    "social media content",
+    "product video",
+    "professional photography",
+    "short form video",
+    "visual storytelling",
   ],
-  authors: [{ name: "Alex Rivera" }],
+  authors: [{ name: "Vipermedia" }],
   openGraph: {
-    title: "Alex Rivera | Cinematic Videographer",
+    title: "Vipermedia — Unleash Your Story, Amplify Your Reach",
     description:
-      "Cinematic videography portfolio showcasing brand films, commercials, and social content.",
-    url: "https://alexrivera.com",
-    siteName: "Alex Rivera",
+      "Content creation and visual storytelling that magnifies your brand's digital presence.",
+    url: "https://vipermedia.co",
+    siteName: "Vipermedia",
     type: "website",
     locale: "en_US",
     images: [
@@ -31,15 +32,15 @@ export const metadata: Metadata = {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Alex Rivera Videography",
+        alt: "Vipermedia",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Alex Rivera | Cinematic Videographer",
+    title: "Vipermedia — Unleash Your Story, Amplify Your Reach",
     description:
-      "Cinematic videography portfolio showcasing brand films, commercials, and social content.",
+      "Content creation and visual storytelling that magnifies your brand's digital presence.",
     images: ["/og-image.jpg"],
   },
   robots: { index: true, follow: true },
@@ -51,13 +52,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${syne.variable} ${dmSans.variable}`}>
+    <html lang="en" className={`${syne.variable} ${dmSans.variable} ${manrope.variable}`}>
       <body className="bg-background text-body font-body antialiased">
+        <ScrollProgressBar />
         <ActiveSectionProvider>
           <Navbar />
           {children}
         </ActiveSectionProvider>
-        <CustomCursor />
       </body>
     </html>
   );

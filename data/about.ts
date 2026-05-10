@@ -1,8 +1,8 @@
 import type { AboutContent } from "@/lib/types";
 
 export const aboutContent: AboutContent = {
-  photoUrl: "",
-  bio: "Alex Rivera is a director and cinematographer specializing in cinematic brand films, commercials, and social content. With over a decade of experience, every project is approached with a focus on visual storytelling and emotional impact.",
+  photoUrl: "/images/logos/nnmedia_logo.png",
+  bio: "At Vipermedia, we specialize in content creation and visual storytelling. Our mission is to magnify your brand's digital presence through tailor-made visuals and compelling storytelling.",
   philosophy:
-    "From concept to final delivery, the goal is always the same: create video content that moves people, builds brands, and delivers measurable results.",
+    "Your satisfaction is our top priority. We stand behind our work with an unwavering commitment to excellence — backed by a 100% satisfaction guarantee and unlimited revisions until the content is absolutely perfect.",
 };

@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
+import { Play } from "lucide-react";
 import type { Project } from "@/lib/types";
 
 interface ProjectCardProps {
@@ -39,17 +40,43 @@ export function ProjectCard({ project, onClick }: ProjectCardProps) {
           alt={project.title}
           className="absolute inset-0 h-full w-full object-cover"
         />
-        <video
-          ref={videoRef}
-          src={project.videoUrl}
-          muted
-          loop
-          playsInline
-          preload="none"
-          className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-300 ${
-            isHovered ? "opacity-100" : "opacity-0"
-          }`}
-        />
+        {project.videoUrl && (
+          <video
+            ref={videoRef}
+            src={project.videoUrl}
+            muted
+            loop
+            playsInline
+            preload="none"
+            className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-300 ${
+              isHovered ? "opacity-100" : "opacity-0"
+            }`}
+          />
+        )}
+
+        {(project.youtubeId || project.vimeoId || project.videoUrl) && (
+          <>
+            {/* Subtle dark gradient so the play icon stays readable on bright thumbnails */}
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+
+            {/* Play badge */}
+            <div
+              className={`pointer-events-none absolute inset-0 flex items-center justify-center transition-all duration-300 ${
+                isHovered ? "scale-110" : "scale-100"
+              }`}
+            >
+              <span
+                className={`flex h-16 w-16 items-center justify-center rounded-full backdrop-blur-sm transition-colors duration-300 ${
+                  isHovered
+                    ? "bg-gold/90 text-background"
+                    : "bg-black/55 text-white ring-1 ring-white/30"
+                }`}
+              >
+                <Play className="h-6 w-6 translate-x-[2px]" fill="currentColor" strokeWidth={0} />
+              </span>
+            </div>
+          </>
+        )}
       </div>
 
       {/* Info area */}

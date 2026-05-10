@@ -1,52 +1,90 @@
-import { Instagram, Linkedin } from "lucide-react";
+import Image from "next/image";
+import { Instagram, Linkedin, Music2 } from "lucide-react";
 import { siteConfig } from "@/data/navigation";
 
 export function Footer() {
   return (
-    <footer id="footer" className="py-12">
+    <footer id="footer" className="border-t border-foreground/10 mt-12 py-16">
       <div className="mx-auto max-w-6xl px-6 md:px-8">
-        <div className="flex flex-col items-center gap-8 md:flex-row md:justify-between">
-          {/* Logo text */}
-          <p className="font-heading text-lg font-bold tracking-tight text-heading">
-            {siteConfig.name}
-          </p>
+        <div className="grid grid-cols-1 gap-12 md:grid-cols-12">
+          {/* Brand */}
+          <div className="md:col-span-7">
+            <div className="flex items-center gap-3">
+              <span className="flex h-12 w-12 items-center justify-center rounded-full bg-foreground/[0.04] ring-1 ring-foreground/10">
+                <Image
+                  src="/images/logos/nnmedia_logo_trim.png"
+                  alt="Viper Media"
+                  width={48}
+                  height={48}
+                  className="h-8 w-8 object-contain"
+                />
+              </span>
+              <div className="leading-tight">
+                <p className="font-heading text-base font-semibold text-heading">
+                  Viper Media
+                </p>
+                <p className="text-[0.7rem] uppercase tracking-[0.25em] text-gold">
+                  Boutique content studio
+                </p>
+              </div>
+            </div>
+            <p className="mt-6 max-w-md text-sm text-body">
+              Cinematic photo and video content for premium brands. Based in
+              Bulgaria, working with clients worldwide.
+            </p>
+          </div>
 
-          {/* Email */}
-          <a
-            href={`mailto:${siteConfig.email}`}
-            className="text-sm text-body transition-colors duration-300 hover:text-heading"
-          >
-            {siteConfig.email}
-          </a>
-
-          {/* Social icon placeholders */}
-          <div className="flex items-center gap-4">
+          {/* Contact + socials */}
+          <div className="md:col-span-5">
+            <p className="font-heading text-[0.7rem] uppercase tracking-[0.3em] text-body/70">
+              Get in touch
+            </p>
             <a
-              href={siteConfig.instagram}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex h-10 w-10 items-center justify-center rounded-full bg-foreground/5 text-xs text-body transition-colors duration-300 hover:bg-foreground/10"
-              aria-label="Instagram"
+              href={`mailto:${siteConfig.email}`}
+              className="mt-5 block text-sm text-heading transition-colors duration-300 hover:text-gold"
             >
-              <Instagram className="h-5 w-5" />
+              {siteConfig.email}
             </a>
-            <a
-              href={siteConfig.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex h-10 w-10 items-center justify-center rounded-full bg-foreground/5 text-xs text-body transition-colors duration-300 hover:bg-foreground/10"
-              aria-label="LinkedIn"
-            >
-              <Linkedin className="h-5 w-5" />
-            </a>
+            <div className="mt-6 flex items-center gap-3">
+              <a
+                href={siteConfig.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex h-10 w-10 items-center justify-center rounded-full bg-foreground/[0.04] text-body ring-1 ring-foreground/10 transition-colors duration-300 hover:text-gold hover:ring-gold/30"
+                aria-label="Instagram"
+              >
+                <Instagram className="h-4 w-4" />
+              </a>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex h-10 w-10 items-center justify-center rounded-full bg-foreground/[0.04] text-body ring-1 ring-foreground/10 transition-colors duration-300 hover:text-gold hover:ring-gold/30"
+                aria-label="TikTok"
+              >
+                <Music2 className="h-4 w-4" />
+              </a>
+              <a
+                href={siteConfig.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex h-10 w-10 items-center justify-center rounded-full bg-foreground/[0.04] text-body ring-1 ring-foreground/10 transition-colors duration-300 hover:text-gold hover:ring-gold/30"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="h-4 w-4" />
+              </a>
+            </div>
           </div>
         </div>
 
-        {/* Copyright */}
-        <div className="mt-8 border-t border-foreground/10 pt-8 text-center">
-          <p className="text-sm text-body">
-            &copy; {new Date().getFullYear()} {siteConfig.name}.{" "}
+        {/* Legal line */}
+        <div className="mt-12 flex flex-col items-start justify-between gap-3 border-t border-foreground/10 pt-6 text-xs text-body/70 md:flex-row md:items-center">
+          <p>
+            &copy; {new Date().getFullYear()} Viper Media.{" "}
             {siteConfig.copyright}
+          </p>
+          <p className="text-body/60">
+            Company info coming soon &middot; Sofia, Bulgaria
           </p>
         </div>
       </div>
