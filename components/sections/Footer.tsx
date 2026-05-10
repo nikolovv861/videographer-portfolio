@@ -1,8 +1,12 @@
+"use client";
+
 import Image from "next/image";
 import { Instagram, Linkedin, Music2 } from "lucide-react";
 import { siteConfig } from "@/data/navigation";
+import { useT } from "@/lib/i18n";
 
 export function Footer() {
+  const t = useT();
   return (
     <footer id="footer" className="border-t border-foreground/10 mt-12 py-16">
       <div className="mx-auto max-w-6xl px-6 md:px-8">
@@ -21,23 +25,22 @@ export function Footer() {
               </span>
               <div className="leading-tight">
                 <p className="font-heading text-base font-semibold text-heading">
-                  Viper Media
+                  {t("nav.viperMedia")}
                 </p>
                 <p className="text-[0.7rem] uppercase tracking-[0.25em] text-gold">
-                  Boutique content studio
+                  {t("footer.eyebrow")}
                 </p>
               </div>
             </div>
             <p className="mt-6 max-w-md text-sm text-body">
-              Cinematic photo and video content for premium brands. Based in
-              Bulgaria, working with clients worldwide.
+              {t("footer.pitch")}
             </p>
           </div>
 
           {/* Contact + socials */}
           <div className="md:col-span-5">
             <p className="font-heading text-[0.7rem] uppercase tracking-[0.3em] text-body/70">
-              Get in touch
+              {t("footer.contact")}
             </p>
             <a
               href={`mailto:${siteConfig.email}`}
@@ -80,11 +83,11 @@ export function Footer() {
         {/* Legal line */}
         <div className="mt-12 flex flex-col items-start justify-between gap-3 border-t border-foreground/10 pt-6 text-xs text-body/70 md:flex-row md:items-center">
           <p>
-            &copy; {new Date().getFullYear()} Viper Media.{" "}
-            {siteConfig.copyright}
+            &copy; {new Date().getFullYear()} {t("nav.viperMedia")}.{" "}
+            {t("footer.legal.rights")}
           </p>
           <p className="text-body/60">
-            Company info coming soon &middot; Sofia, Bulgaria
+            {t("footer.legal.companyInfo")} &middot; {t("footer.legal.location")}
           </p>
         </div>
       </div>

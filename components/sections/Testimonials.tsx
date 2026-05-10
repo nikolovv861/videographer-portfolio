@@ -5,6 +5,7 @@ import { Quote } from "lucide-react";
 import { testimonials } from "@/data/site";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { RevealHeading } from "@/components/effects/RevealHeading";
+import { useT } from "@/lib/i18n";
 
 const FAST_PX_PER_SEC = 60;
 const SLOW_PX_PER_SEC = 12;
@@ -122,14 +123,15 @@ function MarqueeRow({
 }
 
 export function Testimonials() {
+  const t = useT();
   return (
     <SectionWrapper id="testimonials" fullBleed>
       <div className="mx-auto max-w-6xl px-6 md:px-8">
         <p className="font-heading text-[0.7rem] uppercase tracking-[0.3em] text-gold">
-          What clients say
+          {t("testimonials.eyebrow")}
         </p>
         <RevealHeading className="mt-3 font-heading text-4xl font-extrabold tracking-tight text-heading sm:text-5xl md:text-6xl lg:text-7xl">
-          Testimonials
+          {t("testimonials.title")}
         </RevealHeading>
       </div>
 

@@ -3,6 +3,7 @@ import { syne, dmSans, manrope } from "@/lib/fonts";
 import { ActiveSectionProvider } from "@/components/providers/ActiveSectionProvider";
 import { Navbar } from "@/components/navbar/Navbar";
 import { ScrollProgressBar } from "@/components/effects/ScrollProgressBar";
+import { I18nProvider } from "@/lib/i18n";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -54,11 +55,13 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${syne.variable} ${dmSans.variable} ${manrope.variable}`}>
       <body className="bg-background text-body font-body antialiased">
-        <ScrollProgressBar />
-        <ActiveSectionProvider>
-          <Navbar />
-          {children}
-        </ActiveSectionProvider>
+        <I18nProvider>
+          <ScrollProgressBar />
+          <ActiveSectionProvider>
+            <Navbar />
+            {children}
+          </ActiveSectionProvider>
+        </I18nProvider>
       </body>
     </html>
   );

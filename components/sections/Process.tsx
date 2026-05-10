@@ -4,12 +4,27 @@ import { motion } from "motion/react";
 import { processSteps } from "@/data/site";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { RevealHeading } from "@/components/effects/RevealHeading";
+import { useT, dict } from "@/lib/i18n";
+
+const titleKeyById: Record<string, keyof typeof dict> = {
+  discovery: "process.discovery.title",
+  concept: "process.concept.title",
+  production: "process.production.title",
+  delivery: "process.delivery.title",
+};
+const descKeyById: Record<string, keyof typeof dict> = {
+  discovery: "process.discovery.desc",
+  concept: "process.concept.desc",
+  production: "process.production.desc",
+  delivery: "process.delivery.desc",
+};
 
 export function Process() {
+  const t = useT();
   return (
     <SectionWrapper id="process">
       <RevealHeading className="font-heading text-4xl font-extrabold tracking-tight text-heading sm:text-5xl md:text-6xl lg:text-7xl">
-        The Process
+        {t("process.title")}
       </RevealHeading>
 
       <div className="mt-20 space-y-24 md:space-y-32">
@@ -26,7 +41,6 @@ export function Process() {
                 reverse ? "md:[&>div:first-child]:order-2" : ""
               }`}
             >
-              {/* Big numeral */}
               <div>
                 <span
                   className="block font-heading text-[5rem] font-black leading-[0.85] text-heading/95 sm:text-[8rem] md:text-[12rem] lg:text-[14rem]"
@@ -36,23 +50,22 @@ export function Process() {
                 </span>
               </div>
 
-              {/* Text */}
               <div className={reverse ? "md:text-right" : ""}>
                 <p className="text-[0.7rem] uppercase tracking-[0.3em] text-gold">
-                  Step {step.number}
+                  {t("process.step")} {step.number}
                 </p>
                 <h3
                   className="mt-3 font-heading text-3xl font-extrabold text-heading md:text-4xl lg:text-5xl"
                   style={{ letterSpacing: "-0.025em" }}
                 >
-                  {step.title}
+                  {titleKeyById[step.id] ? t(titleKeyById[step.id]) : step.title}
                 </h3>
                 <p
                   className={`mt-4 max-w-md text-base text-body md:text-lg ${
                     reverse ? "md:ml-auto" : ""
                   }`}
                 >
-                  {step.description}
+                  {descKeyById[step.id] ? t(descKeyById[step.id]) : step.description}
                 </p>
               </div>
             </motion.div>

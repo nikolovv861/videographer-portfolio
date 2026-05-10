@@ -2,39 +2,20 @@
 
 import { useEffect, useRef, useState } from "react";
 import { motion, useInView } from "motion/react";
+import { useT, dict } from "@/lib/i18n";
 
 type Stat = {
   value: number;
   suffix: string;
-  label: string;
-  description: string;
+  labelKey: keyof typeof dict;
+  descKey: keyof typeof dict;
 };
 
 const stats: Stat[] = [
-  {
-    value: 30,
-    suffix: "+",
-    label: "Brands worked with",
-    description: "Premium consumer, fashion and lifestyle labels.",
-  },
-  {
-    value: 200,
-    suffix: "M+",
-    label: "Views generated",
-    description: "Across Instagram, TikTok and YouTube combined.",
-  },
-  {
-    value: 4,
-    suffix: "",
-    label: "Years of experience",
-    description: "Crafting cinematic content with measurable results.",
-  },
-  {
-    value: 50,
-    suffix: "+",
-    label: "Campaigns shipped",
-    description: "From single-spot promos to ongoing content programs.",
-  },
+  { value: 30, suffix: "+", labelKey: "stats.brands.label", descKey: "stats.brands.desc" },
+  { value: 200, suffix: "M+", labelKey: "stats.views.label", descKey: "stats.views.desc" },
+  { value: 4, suffix: "", labelKey: "stats.years.label", descKey: "stats.years.desc" },
+  { value: 50, suffix: "+", labelKey: "stats.campaigns.label", descKey: "stats.campaigns.desc" },
 ];
 
 function CountUp({
@@ -77,6 +58,7 @@ export function Stats() {
     amount: 0.2,
     margin: "0px 0px -10% 0px",
   });
+  const t = useT();
 
   return (
     <section ref={ref} className="px-6 py-24 md:px-8 md:py-32">
@@ -84,7 +66,7 @@ export function Stats() {
         <div className="grid grid-cols-1 gap-y-14 sm:grid-cols-2 sm:gap-y-16 lg:grid-cols-4 lg:gap-x-12">
           {stats.map((s, i) => (
             <motion.div
-              key={s.label}
+              key={s.labelKey}
               initial={{ opacity: 0, y: 28 }}
               animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 28 }}
               transition={{
@@ -106,10 +88,10 @@ export function Stats() {
                 {s.suffix}
               </p>
               <p className="mt-5 font-heading text-base font-semibold tracking-tight text-heading">
-                {s.label}
+                {t(s.labelKey)}
               </p>
               <p className="mt-2 max-w-[28ch] text-sm leading-relaxed text-body">
-                {s.description}
+                {t(s.descKey)}
               </p>
             </motion.div>
           ))}

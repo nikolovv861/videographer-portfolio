@@ -3,12 +3,13 @@
 import { useRef } from "react";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "motion/react";
-import { aboutContent } from "@/data/about";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { ScrollReveal, ScrollRevealItem } from "@/components/effects/ScrollReveal";
 import { RevealHeading } from "@/components/effects/RevealHeading";
+import { useT } from "@/lib/i18n";
 
 export function About() {
+  const t = useT();
   const photoRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: photoRef,
@@ -20,7 +21,7 @@ export function About() {
   return (
     <SectionWrapper id="about">
       <RevealHeading className="font-heading text-4xl font-extrabold tracking-tight text-heading sm:text-5xl md:text-6xl lg:text-7xl">
-        About
+        {t("about.title")}
       </RevealHeading>
       <ScrollReveal className="mt-16 grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">
         <ScrollRevealItem>
@@ -46,13 +47,13 @@ export function About() {
         <ScrollRevealItem>
           <div className="flex h-full flex-col justify-center">
             <p className="font-heading text-[0.7rem] uppercase tracking-[0.3em] text-gold">
-              Founder &mdash; Niki Kerezov
+              {t("about.founder")}
             </p>
             <p className="mt-6 text-base text-body md:text-lg">
-              {aboutContent.bio}
+              {t("about.bio")}
             </p>
             <blockquote className="mt-8 border-l-2 border-gold pl-6 text-base text-heading/80 italic md:text-lg">
-              {aboutContent.philosophy}
+              {t("about.philosophy")}
             </blockquote>
           </div>
         </ScrollRevealItem>

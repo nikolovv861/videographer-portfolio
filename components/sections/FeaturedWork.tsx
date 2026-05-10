@@ -8,14 +8,16 @@ import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { ProjectModal } from "@/components/ui/ProjectModal";
 import type { Project } from "@/lib/types";
 import { RevealHeading } from "@/components/effects/RevealHeading";
+import { useT } from "@/lib/i18n";
 
 export function FeaturedWork() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const t = useT();
 
   return (
     <SectionWrapper id="work">
       <RevealHeading className="font-heading text-4xl font-extrabold tracking-tight text-heading sm:text-5xl md:text-6xl lg:text-7xl">
-        Featured Work
+        {t("work.title")}
       </RevealHeading>
 
       <div className="mt-16 grid grid-cols-1 gap-12 lg:grid-cols-12">
@@ -23,18 +25,17 @@ export function FeaturedWork() {
         <div className="lg:col-span-4">
           <div className="lg:sticky lg:top-32">
             <p className="text-[0.7rem] uppercase tracking-[0.3em] text-gold">
-              Selected projects
+              {t("work.eyebrow")}
             </p>
             <h3
               className="mt-3 font-heading text-3xl font-extrabold text-heading md:text-4xl"
               style={{ letterSpacing: "-0.025em" }}
             >
-              Cinematic work
-              <br /> across categories.
+              {t("work.subhead.1")}
+              <br /> {t("work.subhead.2")}
             </h3>
             <p className="mt-6 max-w-sm text-base text-body">
-              A curated cross-section of recent client work. Click any project
-              to open the full case study.
+              {t("work.intro")}
             </p>
           </div>
         </div>

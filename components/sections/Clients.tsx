@@ -5,6 +5,7 @@ import Image from "next/image";
 import { clients } from "@/data/clients";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { RevealHeading } from "@/components/effects/RevealHeading";
+import { useT } from "@/lib/i18n";
 
 const FAST_PX_PER_SEC = 180;  // base scroll speed
 const SLOW_PX_PER_SEC = 28;   // when hovered
@@ -67,14 +68,16 @@ export function Clients() {
     targetSpeedRef.current = FAST_PX_PER_SEC;
   };
 
+  const t = useT();
+
   return (
     <SectionWrapper id="clients" fullBleed>
       <div className="mx-auto max-w-6xl px-6 md:px-8">
         <p className="text-center font-heading text-[0.7rem] uppercase tracking-[0.3em] text-gold">
-          Trusted by
+          {t("clients.eyebrow")}
         </p>
         <RevealHeading className="mt-3 text-center font-heading text-4xl font-extrabold tracking-tight text-heading sm:text-5xl md:text-6xl lg:text-7xl">
-          Selected clients
+          {t("clients.title")}
         </RevealHeading>
       </div>
 

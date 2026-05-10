@@ -5,18 +5,19 @@ import { Play } from "lucide-react";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { ScrollReveal, ScrollRevealItem } from "@/components/effects/ScrollReveal";
 import { RevealHeading } from "@/components/effects/RevealHeading";
+import { useT } from "@/lib/i18n";
 
 export function Showreel() {
+  const t = useT();
   return (
     <SectionWrapper id="showreel">
       <ScrollReveal className="text-center">
         <ScrollRevealItem>
           <RevealHeading className="font-heading text-4xl font-extrabold tracking-tight text-heading sm:text-5xl md:text-6xl lg:text-7xl">
-            Showreel
+            {t("showreel.title")}
           </RevealHeading>
           <p className="mx-auto mt-6 max-w-2xl text-base text-body md:text-lg">
-            A curated selection of recent work across commercials, brand films,
-            and social content.
+            {t("showreel.body")}
           </p>
         </ScrollRevealItem>
       </ScrollReveal>
@@ -34,11 +35,10 @@ export function Showreel() {
                 <Play className="h-7 w-7 text-gold" strokeWidth={1.5} />
               </motion.div>
               <p className="font-heading text-xs uppercase tracking-[0.3em] text-gold">
-                Reel arriving soon
+                {t("showreel.soon")}
               </p>
               <p className="max-w-md px-6 text-center text-sm text-body">
-                A new showreel is in production. In the meantime, see the
-                Featured Work below.
+                {t("showreel.soonBody")}
               </p>
             </div>
           </div>
